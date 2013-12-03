@@ -1,14 +1,6 @@
-	<!-- Load CSS Files -->
-	<link rel="stylesheet" href="css/reset.min.css">
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-
-	<!-- Load Script Files -->
-	<script src="js/jquery/jquery.min.js"></script>
-	<script src="js/jquery/jquery-ui.min.js"></script>
-	<script src="js/bootstrap/bootstrap.min.js"></script>
-	
+<nav class="navbar navbar-default" role="navigation">	
+	<div class="container">
 	<!-- Navbar -->
-	<nav class="navbar navbar-default" role="navigation">
 	  <div class="navbar-header">
 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 	      <span class="sr-only">Toggle navigation</span>
@@ -16,11 +8,11 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </button>
-	    <a class="navbar-brand" href="#">Brand</a>
+	    <a class="navbar-brand" href="#">MHelp</a>
 	  </div>
 
 	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	    <ul class="nav navbar-nav">
+	    <!-- <ul class="nav navbar-nav">
 	      <li class="active"><a href="#">Link</a></li>
 	      <li><a href="#">Link</a></li>
 	      <li class="dropdown">
@@ -35,7 +27,7 @@
 	          <li><a href="#">One more separated link</a></li>
 	        </ul>
 	      </li>
-	    </ul>
+	    </ul> -->
 	    <form class="navbar-form navbar-left" role="search">
 	      <div class="form-group">
 	        <input type="text" class="form-control" placeholder="Search">
@@ -43,9 +35,10 @@
 	      <button type="submit" class="btn btn-default">Submit</button>
 	    </form>
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#">Link</a></li>
+	      <!-- <li><a href="#">Link</a></li> -->
+		  <li><img src="img/avatar.jpg" class="avatar"></li>
 	      <li class="dropdown">
-	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chengqi Zhu<b class="caret"></b></a>
 	        <ul class="dropdown-menu">
 	          <li><a href="#">Action</a></li>
 	          <li><a href="#">Another action</a></li>
@@ -56,4 +49,5 @@
 	      </li>
 	    </ul>
 	  </div><!-- /.navbar-collapse -->
-	</nav>
+	</div>
+</nav>
