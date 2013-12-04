@@ -4,8 +4,12 @@
 	margin:5px;
 }
 
-#searchbox{
-	width:350px;
+#searchBtn{
+	border-radius: 18px;
+}
+
+#searchBox {
+	width: 300px;
 }
 
 #mainbar{
