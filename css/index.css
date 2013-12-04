@@ -1,60 +1,65 @@
-.avatar{
-	width:40px;
-	height:40px;
-	margin:5px;
+body {
+    padding-top: 70px;
 }
-
-#searchBtn{
-	border-radius: 18px;
+.avatar {
+    width:40px;
+    height:40px;
+    margin:5px;
 }
-
+#searchBtn {
+    border-radius: 18px;
+}
 #searchBox {
-	width: 300px;
+    width: 300px;
 }
-
-#mainbar{
-/*	border-top:1px solid #E3E3E3;*/	
-/*	padding:0px;
-*/	margin-bottom:30px;
+#mainbar {
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: none;
 }
-
-#tasklist{
-	margin:0px;
+#tasklist {
+    margin:0px;
 }
-
-#tasklist .author{
-	width:60px;
-	height:100%;
-	text-align:center;
-	float:left;
+#tasklist .author {
+    width:60px;
+    height:100%;
+    text-align:center;
+    float:left;
+    margin: 5px;
 }
-
-#tasklist .content{
-	height:100%;
-	margin-left:60px;
-	padding: 5px 0 0 0;
+#tasklist .content {
+    height: 100%;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-#tasklist .content .information{
-	overflow:auto;
+#tasklist .content h4 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
-
-#tasklist .content .infoleft{
-	float:left;
-	margin-right:20px;
+#tasklist .content .information {
+    overflow:auto;
+    margin: 5px 0;
 }
-
-#tasklist .content .inforight{
-	float:right;
-	margin-right:10px;
+#tasklist .content .infoleft {
+    float:left;
+    margin-right:20px;
 }
-
-.content h5{
-	margin:0;
-	color:#567daa;
+#tasklist .content .inforight {
+    float:right;
+    margin-right:10px;
 }
-
-#tasklist li{
-	border-top:1px solid #E3E3E3;
-	padding-top:5px;
+.content h5 {
+    margin:0;
+    color:#567daa;
+}
+#tasklist li {
+    border-top:1px solid #E3E3E3;
+    padding-top:5px;
+}
+.task-pagination {
+    margin: 20px 0 10px 0;
 }

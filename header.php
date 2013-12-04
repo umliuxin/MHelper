@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">	
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgba(248,248,248,0.9);">	
 	<div class="container">
 		<!-- Navbar -->
 		<div class="navbar-header">

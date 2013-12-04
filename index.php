@@ -5,10 +5,9 @@
 	<title>MHelper-Home</title>
 	
 	<!-- Load CSS Files -->
-	<link rel="stylesheet" href="css/reset.min.css">
-	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
 	
 	<!-- Load Script Files -->
 	<script src="js/jquery/jquery.min.js"></script>
@@ -30,9 +29,8 @@
 					<li>
 						<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
 						<div class="content">
-							<h5>Name</h5>
 							<h4>Ok, so here would be the title of the task</h4>
-							<p>Be quiet, the adults are testing!!!</p>
+							<h5>Name</h5>
 							<div class="information">
 								<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
 								<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
@@ -44,7 +42,7 @@
 					<?php }?>
 				</ul>
 				<div style="text-align:center">
-					<ul class="pagination">
+					<ul class="pagination task-pagination">
 					  <li><a href="#">&laquo;</a></li>
 					  <li><a href="#">1</a></li>
 					  <li><a href="#">2</a></li>
