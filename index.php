@@ -21,6 +21,57 @@
 		<div class="row">
 			<div id="leftbar" class="col-md-2">
 				<h4><i class="fa fa-tags fa-fw"></i> Task Filter</h4>
+				<ul id="filterlist" class="list-unstyled">
+					<li>
+						<h5><i class="fa fa-star"></i> Featured</h5>
+						<ul id="featured" class="filteritem list-unstyled">
+							<li class="selected">Popular</li>
+							<li>Recently Launched</li>
+							<li>Ending Soon</li>
+							<li>Most Applied</li>
+						</ul>
+					</li>
+					<li>
+						<h5><i class="fa fa-tag"></i> Category</h5>
+						<ul id="category" class="filteritem list-unstyled">
+							<li>Programming</li>
+							<li>Engineering</li>
+							<li>Design</li>
+							<li>Science</li>
+							<li>Language</li>
+							<li>Sports</li>
+							<li>Music</li>
+							<li>Others</li>
+						</ul>
+					</li>
+					<li>
+						<h5><i class="fa fa-check-square-o"></i> Status</h5>
+						<ul id="status" class="filteritem list-unstyled">
+							<li>Open</li>
+							<li>In Progress</li>
+							<li>Successful</li>
+							<li>Failed</li>
+						</ul>
+					</li>
+					<li>
+						<h5><i class="fa fa-wrench"></i> Skill</h5>
+						<ul id="skill" class="filteritem list-unstyled">
+							<li>Photoshop</li>
+							<li>Interview</li>
+							<li>HTML</li>
+							<li>Wood Cutting</li>
+						</ul>
+					</li>
+					<li>
+						<h5><i class="fa fa-map-marker"></i> Location</h5>
+						<ul id="location" class="filteritem list-unstyled">
+							<li>North Campus</li>
+							<li>Central Campus</li>
+							<li>Sounth Campus</li>
+							<li>Off-Campus</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 			<div id="mainbar" class="col-md-7">
 				<h4><i class="fa fa-th-list fa-fw"></i> Task Explore</h4>
@@ -29,8 +80,9 @@
 					<li>
 						<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
 						<div class="content">
+							<h5>Name, <span class="text-muted">I wrote python, I'm a super hero.</span></h5>
 							<h4>Ok, so here would be the title of the task</h4>
-							<h5>Name</h5>
+							<p>Hey, be quiet, the adults are testing.</p>
 							<div class="information">
 								<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
 								<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
@@ -57,6 +109,18 @@
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+	$('.filteritem li').click(function(){
+		var parent = $(this).parent();
+		console.log(parent.attr('id'));
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+		}else{
+			$(this).addClass('selected');
+		}
+	});
+	</script>
 	
 </body>
 </html>

@@ -15,34 +15,40 @@ body {
 #mainbar {
     margin-left: 0;
     margin-right: 0;
-    border: 1px solid #ddd;
-    padding: 10px;
+/*    border: 1px solid #ddd;
     border-radius: 4px;
-    box-shadow: none;
+    box-shadow: none;*/
 }
 #tasklist {
     margin:0px;
+}
+#tasklist li{
+	padding:5px 0;
+	border-top:1px solid #eee;
 }
 #tasklist .author {
     width:60px;
     height:100%;
     text-align:center;
     float:left;
-    margin: 5px;
 }
 #tasklist .content {
     height: 100%;
     margin-left: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+}
+#tasklist .content h5 {
+    color:#567daa;
+	margin:5px 0 5px 0;
 }
 #tasklist .content h4 {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+    color:#3b5998;
 }
 #tasklist .content .information {
     overflow:auto;
-    margin: 5px 0;
+	margin:5px 0;
+}
+#tasklist .content .information h4{
+	margin:0;
 }
 #tasklist .content .infoleft {
     float:left;
@@ -52,14 +58,31 @@ body {
     float:right;
     margin-right:10px;
 }
-.content h5 {
-    margin:0;
-    color:#567daa;
-}
-#tasklist li {
-    border-top:1px solid #E3E3E3;
-    padding-top:5px;
-}
 .task-pagination {
     margin: 20px 0 10px 0;
+}
+
+
+#filterlist{
+	border-top:1px solid #eee;
+}
+#filterlist li{
+	margin-bottom:20px;
+}
+#filterlist li h5{
+	color:#567daa;
+	font-size:15px;
+}
+
+#filterlist .filteritem li{
+	margin:3px 0;
+	padding:2px 0 2px 8px;
+	border-radius:8px;
+	cursor:pointer;
+}
+#filterlist .filteritem li:hover{
+	background-color:rgba(173,216,230,.6);
+}
+#filterlist .filteritem .selected{
+	background-color:rgba(173,216,230,.6);
 }
