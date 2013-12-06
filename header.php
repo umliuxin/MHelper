@@ -8,13 +8,13 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">MHelper</a>
+			<a class="navbar-brand" href="index.php">MHelper</a>
 		</div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#"><i class="fa fa-home"></i> Explore</a></li>
+				<li class="active"><a href="index.php"><i class="fa fa-home"></i> Explore</a></li>
 			</ul>
 
 			<form class="navbar-form navbar-left" id="searchBar" role="search">
@@ -29,7 +29,7 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chengqi Zhu<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-user" style="margin-right:10px;"></i>Profile</a></li>
+						<li><a href="profile.php"><i class="fa fa-user" style="margin-right:10px;"></i>Profile</a></li>
 						<li><a href="#"><i class="fa fa-cog" style="margin-right:10px;"></i>Setting</a></li>
 						<li class="divider"></li>
 						<li><a href="#"><i class="fa fa-sign-out" style="margin-right:10px;"></i>Logout</a></li>
