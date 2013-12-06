@@ -41,10 +41,10 @@ body {
 	margin:5px 0 5px 0;
 }
 #tasklist .content h4 {
-    color:#3b5998;
+    color:#567daa;
 }
 #tasklist .content .information {
-    overflow:auto;
+    overflow:hidden;
 	margin:5px 0;
 }
 #tasklist .content .information h4{
@@ -77,12 +77,29 @@ body {
 #filterlist .filteritem li{
 	margin:3px 0;
 	padding:2px 0 2px 8px;
-	border-radius:8px;
+	border-radius:4px;
 	cursor:pointer;
+	color:#777;
 }
 #filterlist .filteritem li:hover{
 	background-color:rgba(173,216,230,.6);
 }
 #filterlist .filteritem .selected{
+	background-color:rgba(173,216,230,.6);
+}
+
+#rightbar{
+}
+#tasklinks{
+	color:#777;
+	border-bottom:1px solid #eee;
+}
+#tasklinks li{
+	margin:6px 0;
+	padding:3px 0 3px 3px;
+	cursor:pointer;
+	border-radius:4px;
+}
+#tasklinks li:hover{
 	background-color:rgba(173,216,230,.6);
 }

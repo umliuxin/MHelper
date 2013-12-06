@@ -106,6 +106,13 @@
 				</div>
 			</div>
 			<div id="rightbar" class="col-md-3">
+				<ul id="tasklinks" class="list-unstyled">
+					<li><i class="fa fa-file-o fa-fw"></i> My Posted Tasks</li>
+					<li><i class="fa fa-rocket fa-fw"></i> My Applied Tasks</li>
+					<li><i class="fa fa-edit fa-fw"></i> My Working Tasks</li>
+					<li><i class="fa fa-check-circle-o fa-fw"></i> My Succesful Tasks</li>
+					<li><i class="fa fa-times-circle-o fa-fw"></i> My Failed Tasks</li>
+				</ul>
 			</div>
 		</div>
 	</div>
