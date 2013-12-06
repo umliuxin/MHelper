@@ -52,11 +52,70 @@ a.create:hover * {
 }
 /* Help */
  a.help i, .help h4.list-group-item-heading {
-    color:#44bbff;;
+    color:#44bbff;
+    ;
 }
 a.help:hover {
-    background-color:#44bbff;;
+    background-color:#44bbff;
+    ;
 }
 a.help:hover * {
     color:#FFF;
+}
+.nav-pills>li>a {
+    border-radius: 4px 4px 0 0;
+}
+#tasklist {
+    margin:0px;
+}
+#tasklist li {
+    padding:5px 0;
+    border-top:1px solid #eee;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+#tasklist li:hover {
+    background-color: #eee;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+#tasklist li:first-child {
+    padding:5px 0;
+    border-top:5px solid #eee;
+}
+#tasklist .author {
+    width:60px;
+    height:100%;
+    text-align:center;
+    float:left;
+}
+#tasklist .content {
+    height: 100%;
+    margin-left: 60px;
+}
+#tasklist .content h5 {
+    color:#567daa;
+    margin:5px 0 5px 0;
+}
+#tasklist .content h4 {
+    color:#567daa;
+}
+#tasklist .content .information {
+    overflow:hidden;
+    margin:5px 0;
+}
+#tasklist .content .information h4 {
+    margin:0;
+}
+#tasklist .content .infoleft {
+    float:left;
+    margin-right:20px;
+}
+#tasklist .content .inforight {
+    float:right;
+    margin-right:10px;
 }
