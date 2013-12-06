@@ -1,8 +1,16 @@
 body {
     padding-top: 70px;
 }
+.no-padding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 .avatar {
     width:40px;
     height:40px;
     margin:5px;
+}
+.profile-avatar {
+	width: 120px;
+	height: 120px;
 }
