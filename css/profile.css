@@ -1,16 +1,62 @@
 body {
     padding-top: 70px;
 }
-.no-padding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
 .avatar {
     width:40px;
     height:40px;
     margin:5px;
 }
 .profile-avatar {
-	width: 120px;
-	height: 120px;
+    width: 120px;
+    height: 120px;
+}
+.media {
+    /*box-shadow:0px 0px 4px -2px #000;*/
+    margin: 20px 0;
+    padding:30px;
+}
+.dp {
+    border:10px solid #eee;
+    transition: all 0.2s ease-in-out;
+}
+.dp:hover {
+    border:2px solid #eee;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -webkit-font-smoothing:antialiased;
+}
+a {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.fa-big {
+    font-size: 50px;
+    text-align: right;
+    position: absolute;
+    top: 7px;
+    right: 18px;
+    outline: none;
+}
+/* Create */
+ a.create i, .create h4.list-group-item-heading {
+    color:#E48A07;
+}
+a.create:hover {
+    background-color:#E48A07;
+}
+a.create:hover * {
+    color:#FFF;
+}
+/* Help */
+ a.help i, .help h4.list-group-item-heading {
+    color:#44bbff;;
+}
+a.help:hover {
+    background-color:#44bbff;;
+}
+a.help:hover * {
+    color:#FFF;
 }
