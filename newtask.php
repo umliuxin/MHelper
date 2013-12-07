@@ -1,6 +1,19 @@
 <?php
+require_once("db.php");
 $page = "new";
-
+$title=$_POST['title'];
+$category=$_POST['category'];
+$skill=$_POST['skill'];
+$description=$_POST['description'];
+$location=$_POST['location'];
+$startdate=$_POST['startdate'];
+$enddate=$_POST['enddate'];
+$num=$_POST['num'];
+$reward=$_POST['reward'];
+$result=array($title,$category,$skill,$description,$location,$num,$startdate,$enddate,$reward);
+print_r($result);
+print_r(cipher($result));
+add_task(cipher($result));
 ?>
 
 
@@ -32,15 +45,15 @@ $page = "new";
 					<h3>Tell Us About Your Task</h3>
 					<p>This section includes laying out your task description, skill requirements and your rewards.</p>
 				</div>
-				<form id="taskform" role="form" type="POST">
+				<form id="taskform" role="form" method="POST" >
 					<div class="form-group">
 						<label for="tasktitle">Task Title</label>
 						<p>Be creative and clear.</p>
-						<input type="text" id="tasktitle" class="form-control" placeholder="Enter Title">
+						<input type="text" id="tasktitle" class="form-control" name="title" placeholder="Enter Title">
 					</div>
 					<div class="form-group">
 						<label for="category">Task Category</label>
-						<select id="category" class="form-control">
+						<select id="category" class="form-control" name="category">
 						  <option>Choose the category that best fits your task...</option>
 						  <option>Programming</option>
 						  <option>Engineering</option>
@@ -55,16 +68,16 @@ $page = "new";
 					<div class="form-group">
 						<label for="skill">Skill Tags (optional)</label>
 						<p>Help others find your task by tagging it with relavant skills (max5).</p>
-						<input type="text" id="skill" class="form-control" placeholder="">
+						<input type="text" id="skill" class="form-control" name="skill" placeholder="">
 					</div>
 					<div class="form-group">
 						<label for="description">Task Description</label>
 						<p>Describe what needs to be done in detail.</p>
-						<textarea id="description" class="form-control" rows="3"></textarea>
+						<textarea id="description" class="form-control" name="description" rows="3"></textarea>
 					</div>
 					<div class="form-group">
 						<label for="category">Task Location</label>
-						<select id="category" class="form-control">
+						<select id="category" class="form-control" name="location">
 						  <option>Choose the location of the task...</option>
 						  <option>North Campus</option>
 						  <option>Central Campus</option>
@@ -75,15 +88,15 @@ $page = "new";
 					<div class="form-group">
 						<div class="date-group">
 							<label for="start">Start At</label>
-							<div class="input-group input-append date" data-date="" data-date-format="mm-dd-yyyy">
-							  <input id="start" class="form-control" type="text" value="">
+							<div class="input-group input-append date" data-date="" data-date-format="yyyy-mm-dd">
+							  <input id="start" class="form-control" type="text" value="" name="startdate">
 							  <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
 							</div>
 						</div>
 						<div class="date-group">
 							<label for="end">End At</label>
-							<div class="input-group input-append date" data-date="" data-date-format="mm-dd-yyyy">
-							  <input id="end" class="form-control" type="text" value="">
+							<div class="input-group input-append date" data-date="" data-date-format="yyyy-mm-dd">
+							  <input id="end" class="form-control" type="text" value="" name="enddate">
 							  <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
 							</div>
 						</div>
@@ -91,12 +104,12 @@ $page = "new";
 					<div class="form-group">
 						<label for="number">Number of helpers</label>
 						<p>Describe how many helpers you need in the task.</p>
-						<input type="number" id="number" class="form-control" min="0" placeholder="">
+						<input type="number" id="number" class="form-control" min="0" placeholder="" name="num">
 					</div>
 					<div class="form-group">
 						<label for="reward">Reward</label>
 						<p>Indicate the reward you will provide for the helpers.</p>
-						<input type="text" id="reward" class="form-control" placeholder="">
+						<input type="text" id="reward" class="form-control" placeholder="" name="reward">
 					</div>
 					<hr>
 					<button type="submit" class="btn btn-primary">Submit Task</button>

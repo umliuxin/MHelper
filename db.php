@@ -78,17 +78,69 @@ function add_task($array)
 	//array format:0:title,1:category,2:skill tag,3:description,4:num,5:location
 	//6:startdate,7:enddate,8:reward,9:id
 {
-	$date = date('Y-m-d', strtotime(str_replace('-', '/', $date)));
-	$sql="INSERT INTO MHelper (create_time,title,task_category,skill_tags,task_description,task_location,attend_num,start_date,end_data,reward,uid,status,applied) VALUES(".$date.",".$array[0].",'".$array[1]."','".$array[2]."',".$array[3].",".$array[4].",".$array[5].",".$array[6].",".$array[7].",".$array[8].",".$array[9].",0,'0&$&')";
+	$date=date();
+    $date = date("Y-m-d H:i:s",strtotime(str_replace('/','-',$date)));
+	$sql="INSERT INTO task (title,task_category,skill_tags,task_description,task_location,attend_num,start_date,end_data,reward,uid,status,applied) VALUES('".$array[0]."',".$array[1].",'".$array[2]."','".$array[3]."',".$array[4].",".$array[5].",".$array[6].",".$array[7].",'".$array[8]."',".$array[9].",0,'0&$&')";
 	echo $sql;
+	mysql_query($sql);
 }
 
 function cipher($array)
-	//array_format:0-title,1-category,2-skilltag,3task-des,4location,5startdate,7enddate,8,reward
+	//array_format:0-title,1-category,2-skilltag,3task-des,4location,5num,6startdate,7enddate,8reward
 {
-	$return=[];
-	
+	$return=array();
+	array_push($return,$array[0]);
+	switch($array[1]){
+		case "Programming":
+		array_push($return,0);
+		break;
+		case "Engineering":
+		array_push($return,1);
+		break;
+		case "Design":
+		array_push($return,2);
+		break;
+		case "Science":
+		array_push($return,3);
+		break;
+		case "Language":
+		array_push($return,4);
+		break;
+		case "Sport":
+		array_push($return,5);
+		break;
+		case "Music":
+		array_push($return,6);
+		break;
+		case "Others":
+		array_push($return,7);
+		break;
+	}
+	//skill tag
+	array_push($return,'PHP');
+	array_push($return,$array[3]);
+	array_push($return,$array[5]);
+	switch($array[4]){
+		case "Central Campus":
+		array_push($return,0);
+		break;
+		case "North Campus":
+		array_push($return,1);
+		break;
+		case "South Campus":
+		array_push($return,2);
+		break;
+		case "Off Campus":
+		array_push($return,3);
+		break;
+	}
+	array_push($return,$array[6]);
+	array_push($return,$array[7]);
+	array_push($return,$array[8]);
+	array_push($return,1);
 	return $return;
+	//array format:0:title,1:category,2:skill tag,3:description,4:num,5:location
+	//6:startdate,7:enddate,8:reward,9:id
 }
 
 ?>
