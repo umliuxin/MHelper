@@ -25,6 +25,7 @@ body {
 }
 #task-content .authorinfo{
 	overflow:hidden;
+	color:#777;
 }
 #task-content .authorinfo .avatar{
 	width:25px;

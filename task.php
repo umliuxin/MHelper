@@ -23,7 +23,7 @@
 				<h3>Help needed on laser cutting</h3>
 				<div class="authorinfo">
 					<span class="pull-left"><img class="avatar" src="img/superhero/Hawkeye.png">Felicia</span>
-					<span class="pull-right">3 Hours Ago</span>
+					<span class="pull-right">Posted: 3 hours ago</span>
 				</div>
 				<ul class="list-unstyled">
 					<li>
@@ -33,7 +33,7 @@
 		What I need is an 18’’ round board of any solid material, maybe plywood or plastics. It should be horizontally rotatable around a shaft at the center smoothly and steadily. In the game, the player will be turning the board to control, so the edge may need to be milled smoother. A platform is needed as the base for the shaft. There should be free space at least 1.8’’ in height between the rotatable board and the platform for placing sensors later.</p>
 					</li>
 					<li>
-						<h4>Skills Requirements</h4>
+						<h4>Skill Requirements</h4>
 						<button type="button" class="btn btn-warning">laser cutting</button>
 						<button type="button" class="btn btn-info">Adobe Illustrator</button>
 					</li>
