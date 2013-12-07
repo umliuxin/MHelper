@@ -204,9 +204,19 @@ ul.profile-tabs li span.meta {
     padding: 0;
 }
 .badgecontent li {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding: 10px 5px;
     border-bottom: 1px dotted #B3A9A9;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;    
+}
+.badgecontent li:hover {
+    background-color: #eee;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 .badgecontent li:last-child {
     border-bottom: 0;
