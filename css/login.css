@@ -69,9 +69,11 @@ body {
     cursor: pointer;
 }
 .form-signin-text a {
-    color: #fff;
+    color: #eee;
+    -webkit-text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
 }
 .form-signin-text a:hover {
     text-decoration: none;
-    color:#428bca;
+    color:#fff;
 }
