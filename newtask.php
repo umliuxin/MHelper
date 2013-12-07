@@ -75,15 +75,15 @@ $page = "new";
 					<div class="form-group">
 						<div class="date-group">
 							<label for="start">Start At</label>
-							<div class="input-group input-append date" id="start" data-date="" data-date-format="mm-dd-yyyy">
-							  <input class="form-control" type="text" value="">
+							<div class="input-group input-append date" data-date="" data-date-format="mm-dd-yyyy">
+							  <input id="start" class="form-control" type="text" value="">
 							  <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
 							</div>
 						</div>
 						<div class="date-group">
 							<label for="end">End At</label>
-							<div class="input-group input-append date" id="end" data-date="" data-date-format="mm-dd-yyyy">
-							  <input class="form-control" type="text" value="">
+							<div class="input-group input-append date" data-date="" data-date-format="mm-dd-yyyy">
+							  <input id="end" class="form-control" type="text" value="">
 							  <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
 							</div>
 						</div>
