@@ -60,7 +60,7 @@ $page = "new";
 					<div class="form-group">
 						<label for="description">Task Description</label>
 						<p>Describe what needs to be done in detail.</p>
-						<textarea class="form-control" rows="3"></textarea>
+						<textarea id="description" class="form-control" rows="3"></textarea>
 					</div>
 					<div class="form-group">
 						<label for="category">Task Location</label>
@@ -87,6 +87,11 @@ $page = "new";
 							  <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
 							</div>
 						</div>
+					</div>
+					<div class="form-group">
+						<label for="number">Number of helpers</label>
+						<p>Describe how many helpers you need in the task.</p>
+						<input type="number" id="number" class="form-control" min="0" placeholder="">
 					</div>
 					<div class="form-group">
 						<label for="reward">Reward</label>
