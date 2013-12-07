@@ -1,8 +1,15 @@
 body {
     padding-top: 70px;
 }
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 a:hover {
     text-decoration: none;
+}
+ul {
+    list-style: none;
 }
 .avatar {
     width:40px;
@@ -60,7 +67,6 @@ a.create:hover * {
 }
 a.help:hover {
     background-color:#44bbff;
-    ;
 }
 a.help:hover * {
     color:#FFF;
@@ -218,4 +224,64 @@ ul.profile-tabs li span.meta {
 .badgecontent-img img {
     width: 40px;
     height: 40px;
+}
+.btn-label {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px 0 0 3px;
+}
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.btn-other {
+    position: relative;
+    margin-right: 3px;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+.btn {
+    margin-bottom:10px;
+}
+.endorseLine {
+    border-top: 1px solid #f4f4f4;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    overflow: hidden;
+    height: 12px;
+    display: block;
+}
+.endorseContainer {
+    overflow: hidden;
+}
+.endorseBtn {
+    float: left;
+    margin-top: -5px;
+}
+.endorsersPics {
+    float: right;
+    overflow: visible;
+    margin-left: 10px;
+    margin-right: 0px;
+    height: 27px;
+}
+.endorsersPics li {
+    float: left;
+    margin-left: 1px;
+    margin-right: 0px;
+    height: 24px;
+}
+.endorser {
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+.small-thumbnail {
+    width: 24px;
+    height: 24px;
 }

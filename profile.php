@@ -118,7 +118,71 @@
 							<?php }?>
 						</ul>				  		
 				  	</div>
-				  	<div class="tab-pane" id="endorse">endorse content</div>
+				  	<div class="tab-pane" id="endorse">
+
+						<h4>Most endorsed for ...</h4>
+						<div class="row nopadding">
+							<button type="button" class="btn btn-labeled btn-success endorseBtn">
+                				<span class="btn-label">5</span>HTML
+                			</button>
+                			<div class="endorseContainer">
+                				<ul class="endorsersPics">
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Giant Man.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Hawkeye.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Hulk.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Iron Man Mark I.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Loki.png"></li>
+                				</ul>
+                				<hr class="endorseLine">                				
+                			</div>
+						</div>
+						<div class="row nopadding">
+	            			<button type="button" class="btn btn-labeled btn-danger endorseBtn">
+	                			<span class="btn-label">3</span>CSS
+	                		</button>
+	                		<div class="endorseContainer">
+	                			<ul class="endorsersPics">
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Black Widow.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Iron Man Mark II.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Iron Man Mark IV.png"></li>
+                				</ul>
+                				<hr class="endorseLine">                				
+                			</div>						
+						</div>
+						<div class="row nopadding">
+	            			<button type="button" class="btn btn-labeled btn-info endorseBtn">
+	                			<span class="btn-label">2</span>PHP
+	                		</button>
+	                		<div class="endorseContainer">
+	                			<ul class="endorsersPics">
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Nick Fury.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Thor.png"></li>
+                				</ul>
+                				<hr class="endorseLine">				
+                			</div>						
+						</div>
+						<div class="row nopadding">
+	            			<button type="button" class="btn btn-labeled btn-warning endorseBtn">
+	                			<span class="btn-label">2</span>Graphic Design
+	                		</button>
+	                		<div class="endorseContainer">
+	                			<ul class="endorsersPics">
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/War Machine.png"></li>
+                					<li><img class="endorser small-thumbnail" width="30" height="30" src="img/superhero/Agent Coulson.png"></li>
+                				</ul>
+                				<hr class="endorseLine">                				
+                			</div>						
+						</div>
+						<h4>Chengqi also knows about ...</h4>
+						<div class="row nopadding">
+							<button type="button" class="btn btn-labeled btn-other btn-success">Illustration</button>
+							<button type="button" class="btn btn-labeled btn-other btn-default">jQuery</button>
+							<button type="button" class="btn btn-labeled btn-other btn-primary">Data Visualization</button>
+							<button type="button" class="btn btn-labeled btn-other btn-info">Badminton</button>
+							<button type="button" class="btn btn-labeled btn-other btn-warning">Academic writing</button>
+						</div>
+
+				  	</div>
 				  	<div class="tab-pane" id="reputation">reputation content</div>
 					<div class="tab-pane" id="friendlist">
 					    <div class="row">
