@@ -14,11 +14,13 @@ $page = "new";
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 	<link rel="stylesheet" href="css/newtask.css">
+	<link rel="stylesheet" href="css/datepicker.css">
 	
 	<!-- Load Script Files -->
 	<script src="js/jquery/jquery.min.js"></script>
 	<script src="js/jquery/jquery-ui.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
 	
 </head>
 <body>
@@ -71,6 +73,22 @@ $page = "new";
 						</select>
 					</div>
 					<div class="form-group">
+						<div class="date-group">
+							<label for="start">Start At</label>
+							<div class="input-group input-append date" id="start" data-date="" data-date-format="mm-dd-yyyy">
+							  <input class="form-control" type="text" value="">
+							  <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
+							</div>
+						</div>
+						<div class="date-group">
+							<label for="end">End At</label>
+							<div class="input-group input-append date" id="end" data-date="" data-date-format="mm-dd-yyyy">
+							  <input class="form-control" type="text" value="">
+							  <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
 						<label for="reward">Reward</label>
 						<p>Indicator the reward you will provide for the helpers.</p>
 						<input type="text" id="reward" class="form-control" placeholder="">
@@ -82,6 +100,11 @@ $page = "new";
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+	$('#start').datepicker();
+	$('#end').datepicker();
+	</script>
 	
 
 
