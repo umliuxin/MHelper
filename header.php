@@ -33,7 +33,7 @@
 						<li><a href="profile.php"><i class="fa fa-user" style="margin-right:10px;"></i>Profile</a></li>
 						<li><a href="#"><i class="fa fa-cog" style="margin-right:10px;"></i>Setting</a></li>
 						<li class="divider"></li>
-						<li><a href="#"><i class="fa fa-sign-out" style="margin-right:10px;"></i>Logout</a></li>
+						<li><a href="login.php"><i class="fa fa-sign-out" style="margin-right:10px;"></i>Logout</a></li>
 					</ul>
 				</li>
 			</ul>

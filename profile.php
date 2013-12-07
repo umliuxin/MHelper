@@ -13,15 +13,14 @@
 	<script src="js/jquery/jquery.min.js"></script>
 	<script src="js/jquery/jquery-ui.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
-	
 </head>
 <body>
 	<?php require_once("header.php"); ?>
 	<div class="container">
 		<div class="row" id="profile">
 			<div id="profile-content" class="col-md-7 col-md-offset-1">
-				
-				<div class="media" style="padding:0 0 40px 0;">
+	
+				<div class="media" style="padding:0 0 20px 0;">
             		<a class="pull-left" href="#">
             			<img class="profile-avatar media-object dp img-circle" src="img/superhero/Captain America.png" >
             		</a>
@@ -184,16 +183,18 @@
 				  	</div>
 				  	<div class="tab-pane" id="reputation">reputation content</div>
 					<div class="tab-pane" id="friendlist">
-					    <div class="row">
+					    <div class="row nopadding">
 					      	<ul class="thumbnails list-unstyled">
 					      		<?php for($i=0; $i <= 11; $i++){?>
-						        <li class="col-md-3">
+						        <li>
 						          <div class="thumbnail" style="padding: 0">
 						            <div class="caption">
 						          		<h4 class="media-heading">Joe Doe</h4>
-						          		<p class="pull-right"> -- Ann Arbor</p>
-						            	<h4><small class="caption-info"><i class="fa fa-edit"></i> 12</small></h4>
-						            	<h4><small class="caption-info"><i class="fa fa-smile-o"></i> 6</small></h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 12</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 6</small></h4>
+						             	</div>
 						            </div>
 						            <img style="width: 100%" src="http://placehold.it/300x300">            
 						          </div>
