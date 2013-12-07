@@ -48,6 +48,7 @@ body {
 #taskform .form-group{
 	margin-top:36px;
 	width:80%;
+	overflow:hidden;
 }
 #taskform .form-group:first-child{
 	margin-top:0px;
@@ -60,4 +61,17 @@ body {
 }
 #taskform .form-group .form-control{
 	margin-top:6px;
+}
+#taskform .form-group .date-group{
+	width:50%;
+	float:left;
+}
+#taskform .form-group .date-group .date{
+	width:80%;
+}
+#taskform .form-group .date-group .form-control{
+	margin-top:0px;
+}
+#taskform .form-group .date-group label{
+	margin-bottom:11px;
 }
