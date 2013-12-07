@@ -42,18 +42,28 @@
 	        </div>
 			
 			<div id="profile-sidebar" class="col-md-3">
-				<div class="list-inline">
-	                <a href="#" class="list-group-item create">
-	                    <h3 class="pull-right"><i class="fa fa-big fa-edit"></i></h3>
-	                    <h4 class="list-group-item-heading count">5</h4>
-	                    <p class="list-group-item-text">Created Tasks</p>
-	                </a>
-	                <a href="#" class="list-group-item help">
-	                    <h3 class="pull-right"><i class="fa fa-big fa-smile-o"></i></h3>
-	                    <h4 class="list-group-item-heading count">10</h4>
-	                    <p class="list-group-item-text">Helped Tasks</p>
-	                </a>       	                
-            	</div>				
+				<h4><i class="fa fa-user"></i> User Status</h4>
+		        <hr class="divider">
+				<ul class="profile-tabs">
+				    <li class="followers">
+					    <a href="/MengTo/followers">
+					    	<span class="count">5</span>
+					    	<span class="meta">Created</span>
+						</a>
+					</li>
+				    <li class="following">
+					    <a href="/MengTo/following">
+					    	<span class="count">10</span>
+					    	<span class="meta">Helped</span>
+						</a>
+					</li>
+				    <li class="listed">
+					    <a href="/MengTo/lists/memberships">
+					    	<span class="count">200</span>
+					    	<span class="meta">Views</span>
+						</a>
+					</li>
+				</ul>		
         	</div>
 		</div>
 
