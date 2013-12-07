@@ -92,7 +92,7 @@ $page = "home";
 							<div class="information">
 								<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
 								<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
-								<div class="infoleft"><h4><small><i class="fa fa-rocket"></i> 5</small></h4></div>
+								<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>
 								<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> Just Now</small></h4></div>
 							</div>
 						</div>
@@ -114,7 +114,7 @@ $page = "home";
 			<div id="rightbar" class="col-md-3">
 				<ul id="tasklinks" class="list-unstyled">
 					<li><i class="fa fa-file-o fa-fw"></i> My Posted Tasks</li>
-					<li><i class="fa fa-rocket fa-fw"></i> My Applied Tasks</li>
+					<li><i class="fa fa-users fa-fw"></i> My Applied Tasks</li>
 					<li><i class="fa fa-edit fa-fw"></i> My Working Tasks</li>
 					<li><i class="fa fa-check-circle-o fa-fw"></i> My Succesful Tasks</li>
 					<li><i class="fa fa-times-circle-o fa-fw"></i> My Failed Tasks</li>

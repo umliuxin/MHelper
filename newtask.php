@@ -102,8 +102,8 @@ $page = "new";
 	</div>
 	
 	<script type="text/javascript" charset="utf-8">
-	$('#start').datepicker();
-	$('#end').datepicker();
+	$('.date').datepicker();
+	// $('#end').datepicker();
 	</script>
 	
 
