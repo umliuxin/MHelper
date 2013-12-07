@@ -239,13 +239,10 @@ ul.profile-tabs li span.meta {
 }
 .btn-other {
     position: relative;
-    margin-right: 3px;
+    margin-right: 2px;
     display: inline-block;
     padding: 6px 12px;
     border-radius: 3px;
-}
-.btn {
-    margin-bottom:10px;
 }
 .endorseLine {
     border-top: 1px solid #f4f4f4;
