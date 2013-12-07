@@ -29,12 +29,15 @@ add_task(cipher($result));
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 	<link rel="stylesheet" href="css/newtask.css">
 	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/jquery.tagit.css">
+	<link rel="stylesheet" href="css/tagit.ui-zendesk.css">
 	
 	<!-- Load Script Files -->
 	<script src="js/jquery/jquery.min.js"></script>
 	<script src="js/jquery/jquery-ui.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/tag-it.js"></script>
 	
 </head>
 <body>
