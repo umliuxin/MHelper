@@ -1,6 +1,9 @@
 body {
     padding-top: 70px;
 }
+a:hover {
+    text-decoration: none;
+}
 .avatar {
     width:40px;
     height:40px;
@@ -188,4 +191,31 @@ ul.profile-tabs li span.meta {
     font-size: 12px;
     font-weight: normal;
     color: #999;
+}
+.badgecontent {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.badgecontent li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+.badgecontent li:last-child {
+    border-bottom: 0;
+}
+.badgecontent li.left .badgecontent-body {
+    margin-left: 60px;
+}
+.badgecontent li.right .badgecontent-body {
+    margin-right: 60px;
+}
+.badgecontent li .badgecontent-body p {
+    margin: 0;
+    color: #777777;
+}
+.badgecontent-img img {
+    width: 40px;
+    height: 40px;
 }

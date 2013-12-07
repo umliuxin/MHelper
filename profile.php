@@ -139,7 +139,77 @@
 					    	</ul>
 						</div>		  
 					</div>
+				</div>
+			</div>
 
+			<div id="profile-badge" class="col-md-3">
+				<h4>
+					<i class="fa fa-trophy"></i> User Badge
+					<a class="pull-right"><small>View All</small></a>
+				</h4>
+		        <hr class="divider">
+		        <ul class="badgecontent">
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/acorn.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Help 3 Tasks in one month</strong>
+                            </div>
+                            <p>
+								<small class="text-muted">
+                                	<i class="fa fa-clock-o"></i>Earned 12 hours ago
+                                </small>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/coffee.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Create 2 tasks in a week</strong>
+                            </div>
+                            <p>
+								<small class="text-muted">
+                                	<i class="fa fa-clock-o"></i>Earned 3 days ago
+                                </small>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/leaf.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Endorsed a new skill</strong>
+                            </div>
+                            <p>
+								<small class="text-muted">
+                                	<i class="fa fa-clock-o"></i>Earned 3 weeks ago
+                                </small>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/star.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Get a five star review</strong>
+                            </div>
+                            <p>
+								<small class="text-muted">
+                                	<i class="fa fa-clock-o"></i>Earned 23 hours ago
+                                </small>
+                            </p>
+                        </div>
+                    </li>                                                            
+                </ul> 
 			</div>
 
 	<script>
@@ -156,7 +226,7 @@
 		        function(){
 		            $(this).find('.caption').slideUp(250); //.fadeOut(205)
 		        }
-    		); 
+    		);
 		});
 	</script>
 </body>
