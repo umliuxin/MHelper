@@ -1,5 +1,7 @@
 <?php
 require_once("db.php");
+if(isset($_POST['title']))
+{
 $page = "new";
 $title=$_POST['title'];
 $category=$_POST['category'];
@@ -11,9 +13,8 @@ $enddate=$_POST['enddate'];
 $num=$_POST['num'];
 $reward=$_POST['reward'];
 $result=array($title,$category,$skill,$description,$location,$num,$startdate,$enddate,$reward);
-print_r($result);
-print_r(cipher($result));
 add_task(cipher($result));
+}
 ?>
 
 

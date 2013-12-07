@@ -9,7 +9,7 @@ function get_task()
 {
 	//get tasks by ?? order
 	$return=array();
-	$result=mysql_query("SELECT * FROM task ORDER BY start_date DESC LIMIT 10");
+	$result=mysql_query("SELECT * FROM task ORDER BY start_date DESC");
 	while($row=mysql_fetch_row($result)){
 		array_push($return, $row);
 	}
@@ -80,8 +80,7 @@ function add_task($array)
 {
 	$date=date();
     $date = date("Y-m-d H:i:s",strtotime(str_replace('/','-',$date)));
-	$sql="INSERT INTO task (title,task_category,skill_tags,task_description,task_location,attend_num,start_date,end_data,reward,uid,status,applied) VALUES('".$array[0]."',".$array[1].",'".$array[2]."','".$array[3]."',".$array[4].",".$array[5].",".$array[6].",".$array[7].",'".$array[8]."',".$array[9].",0,'0&$&')";
-	echo $sql;
+	$sql="INSERT INTO task (title,task_category,skill_tags,task_description,task_location,attend_num,start_date,end_data,reward,uid,status,applied) VALUES('".$array[0]."',".$array[1].",'".$array[2]."','".$array[3]."',".$array[4].",".$array[5].",'".$array[6]."','".$array[7]."','".$array[8]."',".$array[9].",0,'0&$&')";
 	mysql_query($sql);
 }
 
