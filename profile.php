@@ -25,7 +25,7 @@
             		<a class="pull-left" href="#">
             			<img class="profile-avatar media-object dp img-circle" src="img/superhero/Captain America.png" >
             		</a>
-		            <div class="media-body col-md-6">
+		            <div class="media-body col-md-7">
 		                <h4 class="media-heading">Joe Doe <small> Ann Arbor</small></h4>
 		               	<blockquote style="margin:0;">
 	                		<small><i class="fa fa-pencil-square"></i> I wrote python, I'm a super hero.</small>
@@ -89,7 +89,7 @@
 								<div class="information">
 									<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
 									<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
-									<div class="infoleft"><h4><small><i class="fa fa-rocket"></i> 5</small></h4></div>
+									<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>
 									<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> Just Now</small></h4></div>
 								</div>
 							</div>
@@ -109,7 +109,7 @@
 									<div class="information">
 										<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
 										<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
-										<div class="infoleft"><h4><small><i class="fa fa-rocket"></i> 5</small></h4></div>
+										<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>
 										<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> Just Now</small></h4></div>
 									</div>
 								</div>

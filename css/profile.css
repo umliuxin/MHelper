@@ -130,6 +130,7 @@ a.help:hover * {
 .thumbnail {
     position:relative;
     overflow:hidden;
+    border:0;
 }
 .caption {
     position:absolute;
@@ -156,10 +157,12 @@ hr.divider {
 }
 ul.profile-tabs {
     padding: 0;
+    margin-bottom: 20px;
 }
 ul.profile-tabs li {
+    width: 33.3%;
     float: left;
-    padding: 1em 1.38em;
+    padding: 0.8em 1em;
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
@@ -250,6 +253,7 @@ ul.profile-tabs li span.meta {
 .btn-other {
     position: relative;
     margin-right: 2px;
+    margin-top: 5px;
     display: inline-block;
     padding: 6px 12px;
     border-radius: 3px;
