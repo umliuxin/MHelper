@@ -87,7 +87,7 @@ $page = "home";
 						<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
 						<div class="content">
 							<h5>Name, <span class="text-muted">I wrote python, I'm a super hero.</span></h5>
-							<h4>Ok, so here would be the title of the task</h4>
+							<a href="task.php"><h4>Ok, so here would be the title of the task</h4></a>
 							<p>Hey, be quiet, the adults are testing.</p>
 							<div class="information">
 								<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
