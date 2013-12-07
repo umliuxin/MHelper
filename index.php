@@ -1,3 +1,9 @@
+<?php
+$page = "home";
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -67,8 +73,8 @@
 						<ul id="location" class="filteritem list-unstyled">
 							<li>North Campus</li>
 							<li>Central Campus</li>
-							<li>Sounth Campus</li>
-							<li>Off-Campus</li>
+							<li>South Campus</li>
+							<li>Off Campus</li>
 						</ul>
 					</li>
 				</ul>

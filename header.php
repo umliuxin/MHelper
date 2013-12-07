@@ -14,7 +14,8 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="index.php"><i class="fa fa-home"></i> Explore</a></li>
+				<li <?php if($page == "home"){?>class="active"<?php }?> ><a href="index.php"><i class="fa fa-home"></i> Explore</a></li>
+				<li <?php if($page == "new"){?>class="active"<?php }?> ><a href="newtask.php"><i class="fa fa-plus"></i> New Task</a></li>
 			</ul>
 
 			<form class="navbar-form navbar-left" id="searchBar" role="search">
