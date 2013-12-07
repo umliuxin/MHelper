@@ -23,6 +23,54 @@ body {
 #task-content p{
 	
 }
+#task-content .authorinfo{
+	overflow:hidden;
+}
+#task-content .authorinfo .avatar{
+	width:25px;
+	height:25px;
+}
+
+#task-content ul li{
+	margin-bottom:30px;
+}
+
+#task-content #messages li{
+	padding:5px 0;
+	margin-bottom:0px;
+	border-top:1px solid #eee;
+}
+#task-content #messages li:first-child{
+	border:none;
+}
+
+#messages .author {
+    width:60px;
+    height:100%;
+    text-align:center;
+    float:left;
+}
+#messages .content {
+    height: 100%;
+    margin-left: 60px;
+}
+#messages .content h5 {
+    color:#567daa;
+	margin:5px 0 5px 0;
+}
+#messages .content h4 {
+    color:#567daa;
+}
+#messages .content .time{
+	color:#999;
+	font-weight:normal;
+}
+
+#messages .content textarea{
+	margin-bottom:10px;
+}
+
+
 
 .overview{
 	background-color:#eee;
