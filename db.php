@@ -83,5 +83,12 @@ function add_task($array)
 	echo $sql;
 }
 
+function cipher($array)
+	//array_format:0-title,1-category,2-skilltag,3task-des,4location,5startdate,7enddate,8,reward
+{
+	$return=[];
+	
+	return $return;
+}
 
 ?>
