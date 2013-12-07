@@ -28,9 +28,9 @@
 		            <div class="media-body col-md-6">
 		                <h4 class="media-heading">Joe Doe <small> Ann Arbor</small></h4>
 		               	<blockquote style="margin:0;">
-	                		<small>Ann Arbor, United States  <i class="fa fa-map-marker"></i></small>
-		            		<small>joedoe@gmail.com <i class="fa fa-envelope"></i></small>
-		            		<small>www.mhelper.com <i class="fa fa-globe"></i></small>
+	                		<small><i class="fa fa-pencil-square"></i> I wrote python, I'm a super hero.</small>
+		            		<small><i class="fa fa-envelope"> joedoe@gmail.com</i></small>
+		            		<small><i class="fa fa-globe"></i> www.mhelper.com</small>
 		                </blockquote>
 		                <hr style="margin:8px auto">
 		                <span class="label label-default">HTML5/CSS3</span>
@@ -73,8 +73,7 @@
       				<li class="active"><a href="#created" data-toggle="tab"><small>Created Tasks  <span class="badge">5</span></small></a></li>
       				<li><a href="#helped" data-toggle="tab"><small>Helped Tasks <span class="badge">10</span></small></a></li>
 					<li><a href="#endorse" data-toggle="tab"><small>Skills &amp; Expertise</small></a></li>
-					<li><a href="#reputation" data-toggle="tab"><small>Reputation</small></a></li>     				
-    				<li><a href="#friendlist" data-toggle="tab"><small>Friend List</small></a></li>
+    				<li><a href="#friendlist" data-toggle="tab"><small>Contact List</small></a></li>
     			</ul>
 
 				<div class="tab-content" style="margin-top:20px;">
