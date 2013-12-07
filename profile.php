@@ -42,7 +42,7 @@
 	        </div>
 			
 			<div id="profile-sidebar" class="col-md-3">
-				<div class="list-group">
+				<div class="list-inline">
 	                <a href="#" class="list-group-item create">
 	                    <h3 class="pull-right"><i class="fa fa-big fa-edit"></i></h3>
 	                    <h4 class="list-group-item-heading count">5</h4>
@@ -59,7 +59,7 @@
 
 		<div class="row" class="profile-content">
 			<div id="profile-tasks" class="col-md-7 col-md-offset-1">
-				<ul class="nav nav-pills" id="myTab">
+				<ul class="nav nav-tabs" id="myTab">
       				<li class="active"><a href="#created" data-toggle="tab"><small>Created Tasks  <span class="badge">5</span></small></a></li>
       				<li><a href="#helped" data-toggle="tab"><small>Helped Tasks <span class="badge">10</span></small></a></li>
 					<li><a href="#endorse" data-toggle="tab"><small>Skills &amp; Expertise</small></a></li>
@@ -67,7 +67,7 @@
     				<li><a href="#friendlist" data-toggle="tab"><small>Friend List</small></a></li>
     			</ul>
 
-				<div class="tab-content">
+				<div class="tab-content" style="margin-top:20px;">
 				  <div class="tab-pane active" id="created">
 					<ul id="tasklist" class="list-unstyled">
 						<?php for($i=0; $i <= 4; $i++){?>
@@ -110,8 +110,25 @@
 				  	</div>
 				  	<div class="tab-pane" id="endorse">endorse content</div>
 				  	<div class="tab-pane" id="reputation">reputation content</div>
-					<div class="tab-pane" id="friendlist">friendlist content</div>			  
-				</div>
+					<div class="tab-pane" id="friendlist">
+					    <div class="row">
+					      	<ul class="thumbnails list-unstyled">
+					      		<?php for($i=0; $i <= 11; $i++){?>
+						        <li class="col-md-3">
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Joe Doe</h4>
+						          		<p class="pull-right"> -- Ann Arbor</p>
+						            	<h4><small class="caption-info"><i class="fa fa-edit"></i> 12</small></h4>
+						            	<h4><small class="caption-info"><i class="fa fa-smile-o"></i> 6</small></h4>
+						            </div>
+						            <img style="width: 100%" src="http://placehold.it/300x300">            
+						          </div>
+						        </li>
+	        					<?php }?>
+					    	</ul>
+						</div>		  
+					</div>
 
 			</div>
 
@@ -121,7 +138,15 @@
 			$('#myTab a').click(function (e) {
 			  e.preventDefault();
 			  $(this).tab('show');
-			})
+			});
+			$('.thumbnail').hover(
+		        function(){
+		            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+		        },
+		        function(){
+		            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+		        }
+    		); 
 		});
 	</script>
 </body>
