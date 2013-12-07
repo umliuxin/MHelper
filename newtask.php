@@ -90,7 +90,7 @@ $page = "new";
 					</div>
 					<div class="form-group">
 						<label for="reward">Reward</label>
-						<p>Indicator the reward you will provide for the helpers.</p>
+						<p>Indicate the reward you will provide for the helpers.</p>
 						<input type="text" id="reward" class="form-control" placeholder="">
 					</div>
 					<hr>
