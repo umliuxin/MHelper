@@ -134,7 +134,8 @@ add_task(cipher($result));
 	        availableTags: sampleTags,
 	        placeholderText: 'Enter skills',
 	        allowSpaces: true,
-	        caseSensitive: false
+	        caseSensitive: false,
+	        tagLimit: 5,
 	    });
 	});
 </script>	
