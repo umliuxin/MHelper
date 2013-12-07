@@ -68,7 +68,8 @@ add_task(cipher($result));
 					<div class="form-group">
 						<label for="skill">Skill Tags (optional)</label>
 						<p>Help others find your task by tagging it with relavant skills (max5).</p>
-						<input type="text" id="skill" class="form-control" name="skill" placeholder="">
+						<input name="tags" id="skillTags" class="form-control" placeholder="Enter Skills">
+						<!-- <input type="text" id="skill" class="form-control" name="skill" placeholder=""> -->
 					</div>
 					<div class="form-group">
 						<label for="description">Task Description</label>
@@ -119,12 +120,20 @@ add_task(cipher($result));
 		</div>
 	</div>
 	
-	<script type="text/javascript" charset="utf-8">
+
+<script type="text/javascript" charset="utf-8">
 	$('.date').datepicker();
 	// $('#end').datepicker();
-	</script>
-	
-
+	$(function() {
+	    var sampleTags = ['c++', 'java', 'php', 'javascript', 'asp', 'ruby', 'python', 'c', 'html', 'css', 'graphic design'];
+	    $('#skillTags').tagit({
+	        availableTags: sampleTags,
+	        placeholderText: 'Enter skills',
+	        allowSpaces: true,
+	        caseSensitive: false
+	    });
+	});
+</script>	
 
 </body>
 </html>
