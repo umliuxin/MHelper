@@ -79,8 +79,8 @@ if ($client->getAccessToken()) {
 
   <div class="container">
     <form class="form-signin">
-      <!-- <h1 class="form-signin-heading text-muted">MHelper</h1> -->
       <img class="form-signin-logo center-block" src="img/login-logo.png" alt="logo">
+      <h3 class="form-signin-heading text-muted">The fragrance always stays in the hand that gives</h3>
         <?php
           if(isset($authUrl)) {
             print "<a class='login btn btn-lg btn-primary btn-block form-signin-btn' href='$authUrl'>Sign In</a>";

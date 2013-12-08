@@ -23,9 +23,6 @@ body {
     padding: 15px;
     margin: 0 auto;
 }
-.form-signin .form-signin-heading, .form-signin {
-    margin-top: 70px;
-}
 .form-signin .form-control {
     position: relative;
     font-size: 16px;
@@ -39,9 +36,10 @@ body {
     z-index: 2;
 }
 .form-signin-heading {
+    margin: -5% auto 5%;
     color: #fff;
     text-align: center;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 .form-signin-text {
     text-align: center;
@@ -59,7 +57,6 @@ body {
 }
 .form-signin-logo {
     text-align: center;
-    margin-top: -5%;
     width: 50%;
 }
 .form-signin-btn {
