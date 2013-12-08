@@ -5,16 +5,76 @@ if (!$db) {
 } 
 mysql_select_db("MHelper");
 
-function get_task()
+function default_get_task()
 {
 	//get tasks by ?? order
 	$return=array();
-	$result=mysql_query("SELECT * FROM task ORDER BY start_date DESC");
+	$result=mysql_query("SELECT * FROM task ORDER BY create_date DESC");
 	while($row=mysql_fetch_row($result)){
 		array_push($return, $row);
 	}
 	return $return;
 }
+
+function get_task($featured,$category,$status,$skill,$location)
+{
+	$sql='SELECT * FROM task WHERE 1=1';
+	if($category!=''){
+		$catelist=explode(",",$category);
+		$sql=$sql." AND (1=2";
+		for($i=0;$i<sizeof($catelist);$i++){
+			$sql=$sql." OR task_category=".$catelist[$i];
+		}
+		$sql=$sql.")";
+	}
+	if($status!=''){
+		$catelist=explode(",",$status);
+		$sql=$sql." AND (1=2";
+		for($i=0;$i<sizeof($catelist);$i++){
+			$sql=$sql." OR status=".$catelist[$i];
+		}
+		$sql=$sql.")";
+	}
+	if($location!=''){
+		$catelist=explode(",",$location);
+		$sql=$sql." AND (1=2";
+		for($i=0;$i<sizeof($catelist);$i++){
+			$sql=$sql." OR task_location=".$catelist[$i];
+		}
+		$sql=$sql.")";
+	}
+	if($skill!=''){
+		$catelist=explode(",",$skill);
+		$sql=$sql." AND (1=2";
+		for($i=0;$i<sizeof($catelist);$i++){
+			$sql=$sql." OR skill_tags LIKE '%".$catelist[$i]."%'";
+		}
+		$sql=$sql.")";
+	}
+	if($featured==0){
+		$sql=$sql." ORDER BY 1-1/(1+((3600*24*(0.7*appliednum+0.2*likenum+commentnum*0.1))/TIME_TO_SEC(TIMEDIFF(NOW(),create_time))))";
+	}
+	if($featured==1){
+		$sql=$sql." ORDER BY create_time DESC";
+	}
+	if($featured=='2'){
+		$datetime = date('Y-m-d', time());
+		$sql=$sql." AND (end_data  > ".$datetime." ) ORDER BY end_data";
+	}
+	if($featured==3){
+		$sql=$sql." ORDER BY appliednum DESC";
+	}
+	echo $sql;
+	$result=mysql_query($sql);
+	$return=array();
+	while($row=mysql_fetch_row($result)){
+		array_push($return, $row);
+	}
+
+	return $return;
+}
+
+
 
 function interpret($array)
 {
