@@ -1,5 +1,5 @@
 <?php
-$db = mysql_connect('localhost:8888','root','root');
+$db = mysql_connect('67.194.115.27:8889','root','root');
 if (!$db) { 
     die('TESTTESTTESTCould not connect: ' . mysql_error()); 
 } 
@@ -78,8 +78,6 @@ function add_task($array)
 	//array format:0:title,1:category,2:skill tag,3:description,4:num,5:location
 	//6:startdate,7:enddate,8:reward,9:id
 {
-	$date=date();
-    $date = date("Y-m-d H:i:s",strtotime(str_replace('/','-',$date)));
 	$sql="INSERT INTO task (title,task_category,skill_tags,task_description,task_location,attend_num,start_date,end_data,reward,uid,status,applied) VALUES('".$array[0]."',".$array[1].",'".$array[2]."','".$array[3]."',".$array[4].",".$array[5].",'".$array[6]."','".$array[7]."','".$array[8]."',".$array[9].",0,'0&$&')";
 	mysql_query($sql);
 }

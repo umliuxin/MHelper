@@ -31,8 +31,8 @@ $page = "home";
 					<li>
 						<h5><i class="fa fa-star"></i> Featured</h5>
 						<ul id="featured" class="filteritem list-unstyled">
-							<li class="selected">Popular</li>
-							<li>Recently Launched</li>
+							<li class="selected">Recently Launched</li>
+							<li>Popular</li>
 							<li>Ending Soon</li>
 							<li>Most Applied</li>
 						</ul>
@@ -45,7 +45,7 @@ $page = "home";
 							<li>Design</li>
 							<li>Science</li>
 							<li>Language</li>
-							<li>Sports</li>
+							<li>Sport</li>
 							<li>Music</li>
 							<li>Others</li>
 						</ul>

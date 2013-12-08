@@ -1,8 +1,9 @@
 <?php
-require_once("db.php");
+$page = "new";
+
 if(isset($_POST['title']))
 {
-$page = "new";
+require_once("db.php");
 $title=$_POST['title'];
 $category=$_POST['category'];
 $skill=$_POST['skill'];
@@ -109,7 +110,7 @@ add_task(cipher($result));
 					<div class="form-group">
 						<label for="number">Number of helpers</label>
 						<p>Describe how many helpers you need in the task.</p>
-						<input type="number" id="number" class="form-control" min="0" placeholder="" name="num">
+						<input type="number" id="number" class="form-control" min="0" placeholder="" name="num" value="1">
 					</div>
 					<div class="form-group">
 						<label for="reward">Reward</label>
