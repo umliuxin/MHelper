@@ -78,11 +78,21 @@ body {
 	cursor:pointer;
 	color:#777;
 }
+#filterlist .filteritem li i{
+	margin-right:5px;
+	display:none;
+	float:right;
+	line-height:1.5;
+	color:#567daa;
+}
 #filterlist .filteritem li:hover{
 	background-color:rgba(173,216,230,.6);
 }
 #filterlist .filteritem .selected{
 	background-color:rgba(173,216,230,.6);
+}
+#filterlist .filteritem .selected i{
+	display:inline-block;
 }
 
 #rightbar{

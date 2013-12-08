@@ -31,50 +31,51 @@ $page = "home";
 					<li>
 						<h5><i class="fa fa-star"></i> Featured</h5>
 						<ul id="featured" class="filteritem list-unstyled">
-							<li class="selected">Recently Launched</li>
-							<li>Popular</li>
-							<li>Ending Soon</li>
-							<li>Most Applied</li>
+							<li value=0 class="selected"><i class="fa fa-check"></i>Recently Launched</li>
+							<li value=1><i class="fa fa-check"></i>Popular</li>
+							<li value=2><i class="fa fa-check"></i>Ending Soon</li>
+							<li value=3><i class="fa fa-check"></i>Most Applied</li>
 						</ul>
 					</li>
 					<li>
 						<h5><i class="fa fa-tag"></i> Category</h5>
 						<ul id="category" class="filteritem list-unstyled">
-							<li>Programming</li>
-							<li>Engineering</li>
-							<li>Design</li>
-							<li>Science</li>
-							<li>Language</li>
-							<li>Sport</li>
-							<li>Music</li>
-							<li>Others</li>
-						</ul>
-					</li>
-					<li>
-						<h5><i class="fa fa-check-square-o"></i> Status</h5>
-						<ul id="status" class="filteritem list-unstyled">
-							<li>Open</li>
-							<li>In Progress</li>
-							<li>Successful</li>
-							<li>Failed</li>
+							<li value=0><i class="fa fa-check"></i>Programming</li>
+							<li value=1><i class="fa fa-check"></i>Engineering</li>
+							<li value=2><i class="fa fa-check"></i>Design</li>
+							<li value=3><i class="fa fa-check"></i>Science</li>
+							<li value=4><i class="fa fa-check"></i>Language</li>
+							<li value=5><i class="fa fa-check"></i>Sport</li>
+							<li value=6><i class="fa fa-check"></i>Music</li>
+							<li value=7><i class="fa fa-check"></i>Others</li>
 						</ul>
 					</li>
 					<li>
 						<h5><i class="fa fa-wrench"></i> Skill</h5>
 						<ul id="skill" class="filteritem list-unstyled">
-							<li>Photoshop</li>
-							<li>Interview</li>
-							<li>HTML</li>
-							<li>Wood Cutting</li>
+							<li value="Photoshop"><i class="fa fa-check"></i>Photoshop</li>
+							<li value="Interview"><i class="fa fa-check"></i>Interview</li>
+							<li value="HTML"><i class="fa fa-check"></i>HTML</li>
+							<li value="Math"><i class="fa fa-check"></i>Math</li>
+							<li value="Chinese"><i class="fa fa-check"></i>Chinese</li>
+						</ul>
+					</li>
+					<li>
+						<h5><i class="fa fa-check-square-o"></i> Status</h5>
+						<ul id="status" class="filteritem list-unstyled">
+							<li value=0><i class="fa fa-check"></i>Open</li>
+							<li value=1><i class="fa fa-check"></i>In Progress</li>
+							<li value=2><i class="fa fa-check"></i>Successful</li>
+							<li value=3><i class="fa fa-check"></i>Failed</li>
 						</ul>
 					</li>
 					<li>
 						<h5><i class="fa fa-map-marker"></i> Location</h5>
 						<ul id="location" class="filteritem list-unstyled">
-							<li>North Campus</li>
-							<li>Central Campus</li>
-							<li>South Campus</li>
-							<li>Off Campus</li>
+							<li value=0><i class="fa fa-check"></i>North Campus</li>
+							<li value=1><i class="fa fa-check"></i>Central Campus</li>
+							<li value=2><i class="fa fa-check"></i>South Campus</li>
+							<li value=3><i class="fa fa-check"></i>Off Campus</li>
 						</ul>
 					</li>
 				</ul>
@@ -126,12 +127,29 @@ $page = "home";
 	<script type="text/javascript" charset="utf-8">
 	$('.filteritem li').click(function(){
 		var parent = $(this).parent();
-		console.log(parent.attr('id'));
-		if($(this).hasClass('selected')){
-			$(this).removeClass('selected');
-		}else{
+		if (parent.attr('id') == 'featured'){
+			parent.children().removeClass('selected');
 			$(this).addClass('selected');
+		}else{
+			if($(this).hasClass('selected')){
+				$(this).removeClass('selected');
+			}else{
+				$(this).addClass('selected');
+			}
 		}
+		
+		var data = "";
+		$('#filterlist').children().each(function(){
+			//var item = $(this).find('ul').attr('id');
+			var value = "";
+			$(this).find('.selected').each(function(){
+				value = value + $(this).attr('value') + ','
+			})
+			data = data + value.slice(0,value.length-1) + "&";
+		});
+		
+		data = data.slice(0,data.length-1);
+		console.log(data);
 	});
 	</script>
 
