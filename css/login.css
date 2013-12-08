@@ -19,7 +19,7 @@ body {
     background-image: url('../img/login-bg.jpg');
 }
 .form-signin {
-    max-width: 280px;
+    max-width: 100%;
     padding: 15px;
     margin: 0 auto;
 }
@@ -58,7 +58,11 @@ body {
     color:#fff;
 }
 .form-signin-logo {
-    width: 70%;
-    height: 70%;
     text-align: center;
+    margin-top: -5%;
+    width: 50%;
+}
+.form-signin-btn {
+    margin:-2% auto 0;
+    width:30%;
 }

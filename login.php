@@ -79,13 +79,13 @@ if ($client->getAccessToken()) {
 
   <div class="container">
     <form class="form-signin">
-      <h1 class="form-signin-heading text-muted">MHelper</h1>
-      <img class="form-signin-logo center-block" src="img/superhero/Iron Man.png" alt="logo">
+      <!-- <h1 class="form-signin-heading text-muted">MHelper</h1> -->
+      <img class="form-signin-logo center-block" src="img/login-logo.png" alt="logo">
         <?php
           if(isset($authUrl)) {
-            print "<a class='login btn btn-lg btn-primary btn-block' id='loginBtn' href='$authUrl'>Sign In</a>";
+            print "<a class='login btn btn-lg btn-primary btn-block form-signin-btn' href='$authUrl'>Sign In</a>";
           } else {
-            print "<a class='logout btn btn-lg btn-primary btn-block' id='loginBtn' href='?logout'>Logout</a>";
+            print "<a class='logout btn btn-lg btn-primary btn-block form-signin-btn' href='?logout'>Logout</a>";
           }
         ?>
       <div class="form-signin-text"><a href="index.php">Sign in with your umich unique name</a></div>
