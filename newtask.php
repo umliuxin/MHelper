@@ -6,7 +6,7 @@ if(isset($_POST['title']))
 require_once("db.php");
 $title=$_POST['title'];
 $category=$_POST['category'];
-$skill=$_POST['skill'];
+$skill=$_POST['tags'];
 $description=$_POST['description'];
 $location=$_POST['location'];
 $startdate=$_POST['startdate'];

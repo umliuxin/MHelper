@@ -1,5 +1,5 @@
 <?php
-$db = mysql_connect('67.194.115.27:8889','root','root');
+$db = mysql_connect('localhost:8889','root','root');
 if (!$db) { 
     die('TESTTESTTESTCould not connect: ' . mysql_error()); 
 } 
@@ -16,7 +16,7 @@ function default_get_task()
 	return $return;
 }
 
-function get_task($featured,$category,$status,$skill,$location)
+function get_task($featured='1',$category='',$status='',$skill='',$location='')
 {
 	$sql='SELECT * FROM task WHERE 1=1';
 	if($category!=''){
@@ -51,10 +51,10 @@ function get_task($featured,$category,$status,$skill,$location)
 		}
 		$sql=$sql.")";
 	}
-	if($featured==0){
+	if($featured==1){
 		$sql=$sql." ORDER BY 1-1/(1+((3600*24*(0.7*appliednum+0.2*likenum+commentnum*0.1))/TIME_TO_SEC(TIMEDIFF(NOW(),create_time))))";
 	}
-	if($featured==1){
+	if($featured==0){
 		$sql=$sql." ORDER BY create_time DESC";
 	}
 	if($featured=='2'){
@@ -64,6 +64,7 @@ function get_task($featured,$category,$status,$skill,$location)
 	if($featured==3){
 		$sql=$sql." ORDER BY appliednum DESC";
 	}
+	echo "set";
 	echo $sql;
 	$result=mysql_query($sql);
 	$return=array();
@@ -174,7 +175,12 @@ function cipher($array)
 		break;
 	}
 	//skill tag
-	array_push($return,'PHP');
+	$skillarray=explode(',',$array[2]);
+	$skillstr='';
+	foreach ($skillarray as $skill){
+		$skillstr=$skillstr."&$&".$skill;
+	}
+	array_push($return,$skillstr);
 	array_push($return,$array[3]);
 	array_push($return,$array[5]);
 	switch($array[4]){
