@@ -1,6 +1,45 @@
 <?php
 $page = "home";
 
+require_once 'google-api-php-client/src/Google_Client.php';
+require_once 'google-api-php-client/src/contrib/Google_PlusService.php';
+
+session_start();
+
+$client = new Google_Client();
+$client->setApplicationName("MHelper");
+// Visit https://code.google.com/apis/console to generate your
+// oauth2_client_id, oauth2_client_secret, and to register your oauth2_redirect_uri.
+$client->setClientId('965773967185-b3hd6glq9pi4vuorlo0kc21iuoh11n2s.apps.googleusercontent.com');
+$client->setClientSecret('IGcSNMAc5x0J_mXSDk8t3uL_');
+$client->setRedirectUri('http://localhost:8888/MHelper/index.php');
+$client->setDeveloperKey('965773967185');
+$plus = new Google_PlusService($client);
+
+if (isset($_GET['code'])) {
+  $client->authenticate($_GET['code']);
+  $_SESSION['access_token'] = $client->getAccessToken();
+  header('Location: http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF']);
+}
+
+if (isset($_SESSION['access_token'])) {
+  $client->setAccessToken($_SESSION['access_token']);
+}
+
+if ($client->getAccessToken()) {
+  $me = $plus->people->get('me');
+  $_SESSION['userid'] = $me['id'];
+  $_SESSION['username'] = $me['displayName'];
+}
+
+// echo("<p>Here is the session information:\n<pre>\n");
+// var_dump($_SESSION);
+// var_dump($me);
+// echo("\n</pre>\n");
+
+require("db.php");
+$tasks = get_task(1,'','','','');
+
 ?>
 
 
@@ -83,7 +122,26 @@ $page = "home";
 			<div id="mainbar" class="col-md-7">
 				<h4><i class="fa fa-th-list fa-fw"></i> Task Explore</h4>
 				<ul id="tasklist" class="list-unstyled">
-					<?php for($i=0; $i <= 10; $i++){?>
+					
+					<?php foreach($tasks as $task){?>
+						<li>
+							<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
+							<div class="content">
+								<h5>Name, <span class="text-muted">Hello world.</span></h5>
+								<a href="task.php"><h4><?=$task[2]?></h4></a>
+								<p><?=$task[5]?></p>
+								<div class="information">
+									<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
+									<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
+									<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>
+									<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> <?=$task[1]?></small></h4></div>
+								</div>
+							</div>
+						</li>
+					<?php }?>
+					
+					
+					<?php for($i=0; $i <= 3; $i++){?>
 					<li>
 						<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
 						<div class="content">
@@ -100,7 +158,7 @@ $page = "home";
 					</li>
 					<?php }?>
 				</ul>
-				<div style="text-align:center">
+				<!-- <div style="text-align:center">
 					<ul class="pagination task-pagination">
 					  <li><a href="#">&laquo;</a></li>
 					  <li><a href="#">1</a></li>
@@ -110,7 +168,7 @@ $page = "home";
 					  <li><a href="#">5</a></li>
 					  <li><a href="#">&raquo;</a></li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 			<div id="rightbar" class="col-md-3">
 				<ul id="tasklinks" class="list-unstyled">

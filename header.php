@@ -28,7 +28,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="profile.php" style="padding:0"><img src="img/avatar.jpg" class="avatar"></a</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chengqi Zhu<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?><b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li><a href="profile.php"><i class="fa fa-user" style="margin-right:10px;"></i>Profile</a></li>
 						<li><a href="#"><i class="fa fa-cog" style="margin-right:10px;"></i>Setting</a></li>
