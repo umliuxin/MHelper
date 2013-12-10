@@ -206,4 +206,62 @@ function cipher($array)
 	//6:startdate,7:enddate,8:reward,9:id
 }
 
+function applytask($uid,$taskarray)//the same with the array from database
+{
+	$num=$taskarray[14]+1;
+	$sql="UPDATE task SET applied='".$taskarray[13].$uid."&$&',appliednum=".$num." WHERE tid=".$taskarray[0];
+	echo $sql;
+}
+
+define("SECOND", 1);
+define("MINUTE", 60 * SECOND);
+define("HOUR", 60 * MINUTE);
+define("DAY", 24 * HOUR);
+define("MONTH", 30 * DAY);
+function relativeTime($time)
+{   
+    $now_time = date("Y-m-d H:i:s",time()-6*60*60);
+    $now_time = strtotime($now_time);
+	$show_time = strtotime($time);
+    $delta = $now_time - $show_time;
+
+    if ($delta < 1 * MINUTE)
+    {
+        return $delta == 1 ? "one second ago" : $delta . " seconds ago";
+    }
+    if ($delta < 2 * MINUTE)
+    {
+      return "a minute ago";
+    }
+    if ($delta < 45 * MINUTE)
+    {
+        return floor($delta / MINUTE) . " minutes ago";
+    }
+    if ($delta < 90 * MINUTE)
+    {
+      return "an hour ago";
+    }
+    if ($delta < 24 * HOUR)
+    {
+      return floor($delta / HOUR) . " hours ago";
+    }
+    if ($delta < 48 * HOUR)
+    {
+      return "yesterday";
+    }
+    if ($delta < 30 * DAY)
+    {
+        return floor($delta / DAY) . " days ago";
+    }
+    if ($delta < 12 * MONTH)
+    {
+      $months = floor($delta / DAY / 30);
+      return $months <= 1 ? "one month ago" : $months . " months ago";
+    }
+    else
+    {
+        $years = floor($delta / DAY / 365);
+        return $years <= 1 ? "one year ago" : $years . " years ago";
+    }
+} 
 ?>

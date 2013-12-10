@@ -7,4 +7,5 @@
 	echo '<br>';
 	print_r(interpret($result[2]));
 	echo '</pre>';
+	applytask(1,$result[2]);
 ?>

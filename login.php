@@ -10,7 +10,7 @@ $client->setApplicationName("MHelper");
 // oauth2_client_id, oauth2_client_secret, and to register your oauth2_redirect_uri.
 $client->setClientId('965773967185-b3hd6glq9pi4vuorlo0kc21iuoh11n2s.apps.googleusercontent.com');
 $client->setClientSecret('IGcSNMAc5x0J_mXSDk8t3uL_');
-$client->setRedirectUri('http://localhost:8888/Github/MHelper/index.php');
+$client->setRedirectUri('http://localhost:8888/MHelper/login.php');
 $client->setDeveloperKey('965773967185');
 $plus = new Google_PlusService($client);
 
@@ -86,6 +86,7 @@ if ($client->getAccessToken()) {
             print "<a class='login btn btn-lg btn-primary btn-block form-signin-btn' href='$authUrl'>Sign In</a>";
           } else {
             print "<a class='logout btn btn-lg btn-primary btn-block form-signin-btn' href='?logout'>Logout</a>";
+			print_r($user);
           }
         ?>
       <div class="form-signin-text">Sign in with your umich unique name</a></div>
