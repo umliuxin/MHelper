@@ -1,6 +1,8 @@
 <?php
 $page = "new";
 
+$uid=$_SESSION['userid'];
+
 if(isset($_POST['title']))
 {
 require_once("db.php");
@@ -14,7 +16,7 @@ $enddate=$_POST['enddate'];
 $num=$_POST['num'];
 $reward=$_POST['reward'];
 $result=array($title,$category,$skill,$description,$location,$num,$startdate,$enddate,$reward);
-add_task(cipher($result));
+add_task($uid,cipher($result));
 }
 ?>
 
