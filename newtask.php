@@ -141,5 +141,7 @@ add_task(cipher($result));
 	});
 </script>	
 
+<?php require_once("footer.php"); ?>
+
 </body>
 </html>

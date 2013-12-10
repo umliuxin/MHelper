@@ -8,7 +8,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.php">MHelper</a>
+			<a class="navbar-brand" href="index.php" style="padding:8px 15px 7px"><img height="35" src="img/logo-nav.png"/></a>
 		</div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -26,7 +26,7 @@
 			</form>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><img src="img/avatar.jpg" class="avatar"></li>
+				<li><a href="profile.php" style="padding:0"><img src="img/avatar.jpg" class="avatar"></a</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chengqi Zhu<b class="caret"></b></a>
 					<ul class="dropdown-menu">

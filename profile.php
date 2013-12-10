@@ -275,7 +275,8 @@
                     </li>                                                            
                 </ul> 
 			</div>
-
+		</div>
+	</div>
 	<script>
 
 		$(document).ready(function() {
@@ -293,4 +294,6 @@
     		);
 		});
 	</script>
+	
+	<?php require_once("footer.php"); ?>
 </body>
