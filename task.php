@@ -7,7 +7,7 @@ if(isset($_SESSION['userid'])){
 if(isset($_GET['tid'])){
 	$tid=$_GET['tid'];
 	$task=getTask($tid);
-	print_r($task);
+	//print_r($task);
 }
 
 ?>
