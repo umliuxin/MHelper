@@ -30,7 +30,7 @@ require('db.php');
             			<img class="profile-avatar media-object dp img-circle" src="<?php echo substr($_SESSION['avatar'], 0, strlen($_SESSION['avatar'])-2).'150'?>" >
             		</a>
 		            <div class="media-body col-md-7">
-		                <h4 class="media-heading">Joe Doe <small> Ann Arbor</small></h4>
+		                <h4 class="media-heading"><?=$_SESSION['username']?> <small> Ann Arbor</small></h4>
 		               	<blockquote style="margin:0;">
 	                		<small><i class="fa fa-pencil-square"></i> I wrote python, I'm a super hero.</small>
 		            		<small><i class="fa fa-envelope"> joedoe@gmail.com</i></small>
