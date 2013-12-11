@@ -39,13 +39,13 @@ if(isset($_GET['fid'])){
 		            <div class="media-body col-md-7">
 		                <h4 class="media-heading"><?=$user[1]?> <small> Ann Arbor</small></h4>
 		               	<blockquote style="margin:0;">
-	                		<small><i class="fa fa-pencil-square"></i><?=$user[3]?></small>
+	                		<small><i class="fa fa-pencil-square"></i> <?=$user[3]?></small>
 							<?php if(!isset($_GET['fid'])){?>
-		            		<small><i class="fa fa-envelope"> joedoe@gmail.com</i></small>
-		            		<small><i class="fa fa-globe"></i> www.mhelper.com</small>
+		            		<small><i class="fa fa-envelope fw"> joedoe@gmail.com</i></small>
+		            		<small><i class="fa fa-globe fw"></i> www.mhelper.com</small>
 							<?php } 
 							else{?>
-							<small><i class="fa fa-hospital-o"></i> www.mhelper.com</small>
+							<small><i class="fa fa-hospital-o fw"></i> School of Information</small>
 							<?php }?>
 		                </blockquote>
 		                <hr style="margin:8px auto">
