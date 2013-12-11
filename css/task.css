@@ -112,9 +112,11 @@ body {
 }
 .skillBtn {
 	margin-left: 5px;
+	margin-top: 5px;
 }
 .skillBtn:first-child; {
 	margin-left: 0;
+	margin-top: 5px;	
 }
 .likeBtn {
 	margin-left: 10px;
