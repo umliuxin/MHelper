@@ -56,7 +56,7 @@ if(isset($_GET['tid'])){
 							for($i=1;$i<sizeof($in[4]);$i++){
 								echo '<button type="button" class="btn btn-info skillBtn"> '.$in[4][$i].'</button>';
 							}
-						
+						}
 						?>
 					</li>
 					<li>
