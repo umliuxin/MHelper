@@ -79,8 +79,8 @@ require('db.php');
 		<div class="row" class="profile-content">
 			<div id="profile-tasks" class="col-md-7 col-md-offset-1">
 				<ul class="nav nav-tabs" id="myTab">
-      				<li class="active"><a href="#created" data-toggle="tab"><small>Created Tasks  <span class="badge">5</span></small></a></li>
-      				<li><a href="#helped" data-toggle="tab"><small>Helped Tasks <span class="badge">10</span></small></a></li>
+      				<li class="active"><a href="#created" data-toggle="tab"><small>Created Tasks  <span class="badge"><?=count($ctasks)?></span></small></a></li>
+      				<li><a href="#helped" data-toggle="tab"><small>Helped Tasks <span class="badge"><?=count($tasks)?></span></small></a></li>
 					<li><a href="#endorse" data-toggle="tab"><small>Skills &amp; Expertise</small></a></li>
     				<li><a href="#friendlist" data-toggle="tab"><small>Contact List</small></a></li>
     			</ul>
@@ -88,14 +88,12 @@ require('db.php');
 				<div class="tab-content" style="margin-top:20px;">
 				  <div class="tab-pane active" id="created">
 					<ul id="tasklist" class="list-unstyled">
-						<?php
-						
-						foreach($ctasks as $task){?>
+						<?php foreach($ctasks as $task){?>
 							<li>
 								<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
 								<div class="content">
 								
-									<h5><?=$task[19][1]?><span class="text-muted">,Hello world.</span></h5>
+									<h5><?=$task[19][1]?><span class="text-muted">,<?=$task[19][3]?></span></h5>
 									<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 									<p><?=$task[5]?></p>
 									<div class="information">
@@ -111,14 +109,12 @@ require('db.php');
 				  	</div>
 				  	<div class="tab-pane" id="helped">
 						<ul id="tasklist" class="list-unstyled">
-							<?php
-							
-							foreach($tasks as $task){?>
+							<?php foreach($tasks as $task){?>
 								<li>
 									<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
 									<div class="content">
 								
-										<h5><?=$task[19][1]?><span class="text-muted">,Hello world.</span></h5>
+										<h5><?=$task[19][1]?><span class="text-muted">,<?=$task[19][3]?></span></h5>
 										<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 										<p><?=$task[5]?></p>
 										<div class="information">
