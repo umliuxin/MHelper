@@ -19,6 +19,7 @@ if(isset($_GET['fid'])){
 	<!-- Load CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/profile.css"/>
 	
 	<!-- Load Script Files -->
@@ -102,7 +103,9 @@ if(isset($_GET['fid'])){
 					<ul id="tasklist" class="list-unstyled">
 						<?php foreach($ctasks as $task){?>
 							<li>
-								<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
+								<div class="author">
+									<a href="profile.php?fid=<?=$task[11]?>"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></a>
+								</div>
 								<div class="content">
 								
 									<h5><?=$task[19][1]?><span class="text-muted">,<?=$task[19][3]?></span></h5>
@@ -123,7 +126,9 @@ if(isset($_GET['fid'])){
 						<ul id="tasklist" class="list-unstyled">
 							<?php foreach($tasks as $task){?>
 								<li>
-									<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
+									<div class="author">
+										<a href="profile.php?fid=<?=$task[11]?>"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></a>
+									</div>
 									<div class="content">
 								
 										<h5><?=$task[19][1]?><span class="text-muted">,<?=$task[19][3]?></span></h5>
@@ -421,6 +426,12 @@ if(isset($_GET['fid'])){
 		            $(this).find('.caption').slideUp(250); //.fadeOut(205)
 		        }
     		);
+    		$('.badgecontent-img').mouseover(function() {
+    			$(this).children().addClass('animated bounce');
+    		})
+    		$('.badgecontent-img').mouseout(function() {
+    			$(this).children().removeClass('animated bounce');
+    		})
 		});
 	</script>
 	

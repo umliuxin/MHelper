@@ -55,6 +55,7 @@ $tasks = get_task(0,'','','','');
 	<!-- Load CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/animate.min.css">	
 	<link rel="stylesheet" href="css/index.css">
 	
 	<!-- Load Script Files -->
@@ -299,6 +300,15 @@ $tasks = get_task(0,'','','','');
 		});
 		
 	});
+
+	$(document).ready(function() {
+		$('.badgecontent-img').mouseover(function() {
+			$(this).children().addClass('animated bounce');
+		})
+		$('.badgecontent-img').mouseout(function() {
+			$(this).children().removeClass('animated bounce');
+		})
+	});	
 	</script>
 	
 	<?php require_once("footer.php"); ?>
