@@ -51,9 +51,12 @@ if(isset($_GET['tid'])){
 					<li>
 						<h4>Skill Requirements</h4>
 						<?php
-						for($i=1;$i<sizeof($in[4]);$i++){
-							echo '<button type="button" class="btn btn-info skillBtn"> '.$in[4][$i].'</button>';
-						}
+						if ($task[4]!='&$&')
+						{
+							for($i=1;$i<sizeof($in[4]);$i++){
+								echo '<button type="button" class="btn btn-info skillBtn"> '.$in[4][$i].'</button>';
+							}
+						
 						?>
 					</li>
 					<li>
