@@ -170,7 +170,6 @@ $tasks = get_task(0,'','','','');
 					<li><i class="fa fa-users fa-fw"></i> My Applied Tasks</li>
 					<li><i class="fa fa-edit fa-fw"></i> My Working Tasks</li>
 					<li><i class="fa fa-check-circle-o fa-fw"></i> My Succesful Tasks</li>
-					<li><i class="fa fa-times-circle-o fa-fw"></i> My Failed Tasks</li>
 				</ul>
 
 				<h4>
