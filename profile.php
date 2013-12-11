@@ -1,5 +1,7 @@
 <?php
 session_start();
+$uid=$_SESSION['userid'];
+require('db.php');
 ?>
 <!doctype html>
 <html lang="en">
@@ -81,41 +83,47 @@ session_start();
 				<div class="tab-content" style="margin-top:20px;">
 				  <div class="tab-pane active" id="created">
 					<ul id="tasklist" class="list-unstyled">
-						<?php for($i=0; $i <= 4; $i++){?>
-						<li>
-							<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
-							<div class="content">
-								<h5>Name, <span class="text-muted">I wrote python, I'm a super hero.</span></h5>
-								<h4>Ok, so here would be the title of the task</h4>
-								<p>Hey, be quiet, the adults are testing.</p>
-								<div class="information">
-									<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
-									<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
-									<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>
-									<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> Just Now</small></h4></div>
+						<?php
+						$tasks=getcreatedtask($uid);
+						foreach($tasks as $task){?>
+							<li>
+								<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
+								<div class="content">
+								
+									<h5><?=$task[19][1]?><span class="text-muted">,Hello world.</span></h5>
+									<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
+									<p><?=$task[5]?></p>
+									<div class="information">
+										<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[16]?></small></h4></div>
+										<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[18]?></small></h4></div>
+										<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[15]?></small></h4></div>
+										<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> <?=$task[1]?></small></h4></div>
+									</div>
 								</div>
-							</div>
-						</li>
+							</li>
 						<?php }?>
 					</ul>
 				  	</div>
 				  	<div class="tab-pane" id="helped">
 						<ul id="tasklist" class="list-unstyled">
-							<?php for($i=0; $i <= 9; $i++){?>
-							<li>
-								<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
-								<div class="content">
-									<h5>Name, <span class="text-muted">I wrote python, I'm a super hero.</span></h5>
-									<h4>Ok, so here would be the title of the task</h4>
-									<p>Hey, be quiet, the adults are testing.</p>
-									<div class="information">
-										<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
-										<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
-										<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>
-										<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> Just Now</small></h4></div>
+							<?php
+							$tasks=getapplytask($uid);
+							foreach($tasks as $task){?>
+								<li>
+									<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
+									<div class="content">
+								
+										<h5><?=$task[19][1]?><span class="text-muted">,Hello world.</span></h5>
+										<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
+										<p><?=$task[5]?></p>
+										<div class="information">
+											<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[16]?></small></h4></div>
+											<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[18]?></small></h4></div>
+											<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[15]?></small></h4></div>
+											<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> <?=$task[1]?></small></h4></div>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 							<?php }?>
 						</ul>				  		
 				  	</div>
