@@ -110,8 +110,8 @@ if(isset($_GET['tid'])){
 					<?php
 					}
 					else{
-						$app=strpos($task[13],$uid);
-						if ($app===0){
+						$app=strpos($task[13], $uid);
+						if ($app===FALSE){
 							echo'<button id="applybtn" type="buttom" class="btn btn-primary applybtn center-block">Apply to this task</button>';
 						}
 						else{
@@ -151,7 +151,7 @@ if(isset($_GET['tid'])){
 		$.ajax({
 			type:'POST',
 			url:'handler.php',
-			data:{apply:'apply',userid:<?=$_SESSION['userid']?>,taskid:<?=$task[0]?>,task13:'<?=$task[13]?>',task14:'<?=$task[14]?>'},
+			data:{apply:'apply',userid:'<?=$_SESSION['userid']?>',taskid:'<?=$task[0]?>',task13:'<?=$task[13]?>',task14:'<?=$task[14]?>'},
 			success:function(response){
 				console.log(response);
 			},

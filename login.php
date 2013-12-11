@@ -10,7 +10,7 @@ $client->setApplicationName("MHelper");
 // oauth2_client_id, oauth2_client_secret, and to register your oauth2_redirect_uri.
 $client->setClientId('965773967185-b3hd6glq9pi4vuorlo0kc21iuoh11n2s.apps.googleusercontent.com');
 $client->setClientSecret('IGcSNMAc5x0J_mXSDk8t3uL_');
-$client->setRedirectUri('http://localhost:8888/MHelper/index.php');
+$client->setRedirectUri('http://chengqi.people.si.umich.edu/mhelper/index.php');
 $client->setDeveloperKey('965773967185');
 $plus = new Google_PlusService($client);
 
