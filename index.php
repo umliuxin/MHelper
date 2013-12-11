@@ -128,7 +128,7 @@ $tasks = get_task(0,'','','','');
 					
 					<?php foreach($tasks as $task){?>
 						<li>
-							<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
+							<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
 							<div class="content">
 								
 								<h5><?=$task[19][1]?><span class="text-muted">,Hello world.</span></h5>
