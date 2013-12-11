@@ -38,7 +38,7 @@ if(isset($_GET['tid'])){
 	<div class="container">
 		<div class="row">
 			<div id="task-content" class="col-md-6 col-md-offset-1">
-				<h3><?=$task[2]?></h3>
+				<h3><?=$task[2]?><a href="#" class="btn btn-default likeBtn" onclick="return false;"><?=$task[15]?> <i class="fa fa-thumbs-o-up"></i></a></h3>
 				<div class="authorinfo">
 					<?php echo '<span class="pull-left"><img class="avatar" src="'.$tuser[2].'">'.$tuser[1].'</span>'; ?>
 					<span class="pull-right">Posted: <?=relativeTime($task[1])?></span>
