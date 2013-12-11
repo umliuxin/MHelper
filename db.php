@@ -61,7 +61,7 @@ function get_task($featured='1',$category='',$skill='',$status='',$location='')
 	}
 	if($featured=='2'){
 		$datetime = date('Y-m-d', time());
-		$sql=$sql." AND (end_data  > ".$datetime." ) ORDER BY end_data";
+		$sql=$sql." AND (end_data  > CAST(".$datetime."AS TIME) ) ORDER BY end_data";
 	}
 	if($featured==3){
 		$sql=$sql." ORDER BY appliednum DESC";
@@ -72,6 +72,7 @@ function get_task($featured='1',$category='',$skill='',$status='',$location='')
 	while($row=mysql_fetch_row($result)){
 		$row[1]=relativeTime($row[1]);
 		array_push($row,getUser($row[11]));
+		
 		array_push($return, $row);
 	}
 

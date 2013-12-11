@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.29)
 # Database: MHelper
-# Generation Time: 2013-12-10 23:19:10 +0000
+# Generation Time: 2013-12-11 03:00:05 +0000
 # ************************************************************
 
 
@@ -56,7 +56,7 @@ CREATE TABLE `task` (
   `reward` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `uid` varchar(25) NOT NULL DEFAULT '',
   `status` smallint(6) NOT NULL COMMENT '0:open,1:in progress,2: success,3:failed',
-  `applied` varchar(500) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '' COMMENT 'separate by &$&',
+  `applied` varchar(500) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '&$&' COMMENT 'separate by &$&',
   `appliednum` smallint(6) NOT NULL DEFAULT '0',
   `likenum` smallint(6) NOT NULL DEFAULT '0',
   `like` varchar(500) NOT NULL DEFAULT '&$&',
@@ -71,10 +71,13 @@ LOCK TABLES `task` WRITE;
 INSERT INTO `task` (`tid`, `create_time`, `title`, `task_category`, `skill_tags`, `task_description`, `task_location`, `attend_num`, `start_date`, `end_data`, `reward`, `uid`, `status`, `applied`, `appliednum`, `likenum`, `like`, `commentnum`, `moderator`)
 VALUES
 	(14,'2013-12-10 15:53:01','1',2,'PHP','abc',1,1,'2013-12-04','2013-12-11','coffee','1',0,'0&$&',0,0,'',0,'&$&'),
-	(15,'2013-12-10 15:53:29','abd',2,'PHP','fads',1,2,'2013-12-18','2013-12-09','abc','1',0,'0&$&',0,0,'',0,'&$&'),
+	(15,'2013-12-10 15:53:29','abd',2,'PHP','fads',1,2,'2013-12-18','2013-12-09','abc','1',2,'0&$&',0,0,'',0,'&$&115961391373383503520'),
 	(16,'2013-12-10 16:09:52','dfas',2,'&$&&$&PS&$&ABC&$&EDF&$&fas','fda',1,0,'2013-12-17','2013-12-27','coffee','1',0,'0&$&',0,0,'',0,'&$&'),
-	(17,'2013-12-10 16:10:24','',0,'','',0,1,'0000-00-00','0000-00-00','','0',0,'',0,0,'',0,'&$&'),
-	(18,'2013-12-10 16:13:04','SI689',4,'&$&Language&$&ABC&$&HAHA','testing',1,3,'2013-12-10','2013-12-12','cup','1',0,'0&$&1&$&',1,0,'',0,'&$&');
+	(17,'2013-12-10 16:10:24','123',0,'','',0,1,'0000-00-00','0000-00-00','','0',3,'115961391373383503520',0,0,'',0,'&$&'),
+	(18,'2013-12-10 16:13:04','SI689',4,'&$&Language&$&ABC&$&HAHA','testing',1,3,'2013-12-10','2013-12-12','cup','1',0,'0&$&1&$&',1,0,'',0,'&$&'),
+	(19,'2013-12-10 18:56:05','HELP FOR SI689',4,'&$&language&$&Personas','Write Personas and Scenario',1,0,'2013-12-10','2013-12-11','Everything','115961391373383503520',1,'0&$&',0,0,'&$&',0,'&$&'),
+	(20,'2013-12-10 18:57:48','Help for SI694',0,'&$&PHp&$&CSS','Coding',1,0,'2013-12-10','2013-12-11','23','115961391373383503520',0,'0&$&',0,0,'&$&',0,'&$&'),
+	(21,'2013-12-10 21:58:54','345',0,'&$&','',0,1,'0000-00-00','0000-00-00','','',0,'&$&',0,0,'&$&',0,'&$&');
 
 /*!40000 ALTER TABLE `task` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -88,11 +91,20 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `uid` varchar(25) NOT NULL DEFAULT '',
   `uname` varchar(30) DEFAULT NULL,
-  `avatar` varchar(50) DEFAULT NULL,
-  `bio` varchar(50) DEFAULT NULL,
+  `avatar` text,
+  `bio` text NOT NULL,
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+
+INSERT INTO `user` (`uid`, `uname`, `avatar`, `bio`)
+VALUES
+	('115961391373383503520','Xin Liu','https://lh6.googleusercontent.com/-bEqsHPQDFR4/AAAAAAAAAAI/AAAAAAAAAAA/s19KzuRUC7Q/photo.jpg?sz=50','');
+
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 

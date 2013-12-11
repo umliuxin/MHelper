@@ -135,9 +135,9 @@ $tasks = get_task(0,'','','','');
 								<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 								<p><?=$task[5]?></p>
 								<div class="information">
-									<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[16]?></small></h4></div>
-									<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[18]?></small></h4></div>
-									<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[15]?></small></h4></div>
+									<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[15]?></small></h4></div>
+									<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[17]?></small></h4></div>
+									<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[14]?></small></h4></div>
 									<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> <?=$task[1]?></small></h4></div>
 								</div>
 							</div>
@@ -212,9 +212,9 @@ $tasks = get_task(0,'','','','');
 								'<a href="task.php?tid='+tasks[i][0]+'"><h4>'+tasks[i][2]+'</h4></a>' +
 								'<p>'+tasks[i][5]+'</p>' +
 								'<div class="information">' +
-									'<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>' +
-									'<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>' +
-									'<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i><?=$task[15]?></small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[17]?></small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[14]?></small></h4></div>' +
 									'<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> '+tasks[i][1]+'</small></h4></div>' +
 								'</div>' +
 							'</div>' +
