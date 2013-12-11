@@ -86,7 +86,6 @@ if ($client->getAccessToken()) {
             print "<a class='login btn btn-lg btn-primary btn-block form-signin-btn' href='$authUrl'>Sign In</a>";
           } else {
             print "<a class='logout btn btn-lg btn-primary btn-block form-signin-btn' href='?logout'>Logout</a>";
-			print_r($user);
           }
         ?>
       <div class="form-signin-text">Sign in with your umich unique name</a></div>
