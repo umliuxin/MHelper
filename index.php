@@ -162,7 +162,7 @@ $tasks = get_task(0,'','','','');
 			</div>
 			<div id="rightbar" class="col-md-3">
 				<h4>
-					<i class="fa fa-trophy"></i> My Tasks
+					<i class="fa fa-user"></i> My Tasks
 				</h4>
 		        <hr class="divider">
 				<ul id="tasklinks" class="list-unstyled" style="margin-bottom:40px;">
@@ -174,7 +174,7 @@ $tasks = get_task(0,'','','','');
 				</ul>
 
 				<h4>
-					<i class="fa fa-trophy"></i> Feeds
+					<i class="fa fa-bolt"></i> Recent Feeds
 					<a class="pull-right"><small>View All</small></a>
 				</h4>
 		        <hr class="divider">
