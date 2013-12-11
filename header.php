@@ -26,6 +26,8 @@
 			</form>
 
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href=""><i class="fa fa-comments" style="font-size:1.3em; margin-right:-15px;"></i></a></li>				
+				<li><a href=""><i class="fa fa-bell" style="font-size:1.3em;"></i></a></li>
 				<?php if(isset($_SESSION['userid'])) {?>
 					<li><a href="profile.php" style="padding:0"><img src="<?=$_SESSION['avatar']?>" class="avatar img-rounded"></a</li>
 					<li class="dropdown">
