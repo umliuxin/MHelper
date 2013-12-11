@@ -157,13 +157,81 @@ $tasks = get_task(0,'','','','');
 				</div> -->
 			</div>
 			<div id="rightbar" class="col-md-3">
-				<ul id="tasklinks" class="list-unstyled">
+				<h4>
+					<i class="fa fa-trophy"></i> My Tasks
+				</h4>
+		        <hr class="divider">
+				<ul id="tasklinks" class="list-unstyled" style="margin-bottom:40px;">
 					<li><i class="fa fa-file-o fa-fw"></i> My Posted Tasks</li>
 					<li><i class="fa fa-users fa-fw"></i> My Applied Tasks</li>
 					<li><i class="fa fa-edit fa-fw"></i> My Working Tasks</li>
 					<li><i class="fa fa-check-circle-o fa-fw"></i> My Succesful Tasks</li>
 					<li><i class="fa fa-times-circle-o fa-fw"></i> My Failed Tasks</li>
 				</ul>
+
+				<h4>
+					<i class="fa fa-trophy"></i> Feeds
+					<a class="pull-right"><small>View All</small></a>
+				</h4>
+		        <hr class="divider">
+		        <ul class="badgecontent">
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/balloon.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Chengqi</strong>
+                                    <small class="text-muted pull-right">
+                                		<i class="fa fa-clock-o"></i> 12 hours ago
+                                	</small>
+                                <p><small>Created a badge in Programming</small></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/cloud.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Xinying</strong>
+                                    <small class="text-muted pull-right">
+                                		<i class="fa fa-clock-o"></i> 3 days ago
+                                	</small>
+                                <p><small>First skill unlocked: Chinese</small></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/feather.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Xin</strong>
+                                    <small class="text-muted pull-right">
+                                		<i class="fa fa-clock-o"></i> 10 days ago
+                                	</small>
+                                <p><small>Helped 10 people in a month</small></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="left clearfix">
+                    	<span class="badgecontent-img pull-left">
+                        	<img src="img/badge/lightbulb.png" alt="User Avatar" class="img-circle" />
+                    	</span>
+                        <div class="badgecontent-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Chengchang</strong>
+                                    <small class="text-muted pull-right">
+                                		<i class="fa fa-clock-o"></i> 1 days ago
+                                	</small>
+                                <p><small>Create the first task</small></p>
+                            </div>
+                        </div>
+                    </li>                                                                                       
+                </ul>
 			</div>
 		</div>
 	</div>

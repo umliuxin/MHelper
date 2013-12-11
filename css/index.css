@@ -1,3 +1,6 @@
+a:hover {
+    text-decoration: none;
+}
 body {
     padding-top: 70px;
 }
@@ -99,7 +102,7 @@ body {
 }
 #tasklinks{
 	color:#777;
-	border-bottom:1px solid #eee;
+/*	border-bottom:1px solid #eee;*/
 }
 #tasklinks li{
 	margin:6px 0;
@@ -109,4 +112,46 @@ body {
 }
 #tasklinks li:hover{
 	background-color:rgba(173,216,230,.6);
+}
+.badgecontent {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.badgecontent li {
+    padding: 10px 10px;
+    border-bottom: 1px dotted #B3A9A9;
+    border-radius: 4px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;    
+}
+.badgecontent li:hover {
+    background-color: rgba(173,216,230,.6);;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.badgecontent li:last-child {
+    border-bottom: 0;
+}
+.badgecontent li.left .badgecontent-body {
+    margin-left: 60px;
+}
+.badgecontent li.right .badgecontent-body {
+    margin-right: 60px;
+}
+.badgecontent li .badgecontent-body p {
+    margin: 0;
+    color: #777777;
+}
+.badgecontent-img img {
+    width: 40px;
+    height: 40px;
+}
+hr.divider {
+    margin: 0 auto 18px;
+    border-width: 5px;
 }
