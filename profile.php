@@ -43,7 +43,10 @@ if(isset($_GET['fid'])){
 							<?php if(!isset($_GET['fid'])){?>
 		            		<small><i class="fa fa-envelope"> joedoe@gmail.com</i></small>
 		            		<small><i class="fa fa-globe"></i> www.mhelper.com</small>
-							<?php } ?>
+							<?php } 
+							else{?>
+							<small><i class="fa fa-hospital-o"></i> www.mhelper.com</small>
+							<?php }?>
 		                </blockquote>
 		                <hr style="margin:8px auto">
 		                <span class="label label-default">HTML5/CSS3</span>
