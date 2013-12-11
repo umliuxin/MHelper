@@ -69,6 +69,7 @@ $tasks = get_task(0,'','','','');
 		<div class="row">
 			<div id="leftbar" class="col-md-2">
 				<h4><i class="fa fa-tags fa-fw"></i> Task Filter</h4>
+				<hr class="divider">
 				<ul id="filterlist" class="list-unstyled">
 					<li>
 						<h5><i class="fa fa-star"></i> Featured</h5>
@@ -124,6 +125,7 @@ $tasks = get_task(0,'','','','');
 			</div>
 			<div id="mainbar" class="col-md-7">
 				<h4><i class="fa fa-th-list fa-fw"></i> Task Explore</h4>
+				<hr class="divider">
 				<ul id="tasklist" class="list-unstyled">
 					
 					<?php foreach($tasks as $task){?>

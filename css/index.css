@@ -26,6 +26,9 @@ body {
 	padding:5px 0;
 	border-top:1px solid #eee;
 }
+#tasklist li:first-child{
+    border-top:0;
+}
 #tasklist .author {
     width:60px;
     height:100%;
@@ -61,10 +64,8 @@ body {
 .task-pagination {
     margin: 20px 0 10px 0;
 }
-
-
 #filterlist{
-	border-top:1px solid #eee;
+	/*border-top:1px solid #eee;*/
 }
 #filterlist li{
 	margin-bottom:20px;
