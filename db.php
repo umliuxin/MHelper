@@ -217,9 +217,10 @@ define("MINUTE", 60 * SECOND);
 define("HOUR", 60 * MINUTE);
 define("DAY", 24 * HOUR);
 define("MONTH", 30 * DAY);
+date_default_timezone_set('America/Detroit');
 function relativeTime($time)
 {   
-    $now_time = date("Y-m-d H:i:s",time()-5*60*60);
+    $now_time = date("Y-m-d H:i:s");
     $now_time = strtotime($now_time);
 	$show_time = strtotime($time);
     $delta = $now_time - $show_time;
