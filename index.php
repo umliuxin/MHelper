@@ -3,6 +3,7 @@ $page = "home";
 
 require_once 'google-api-php-client/src/Google_Client.php';
 require_once 'google-api-php-client/src/contrib/Google_PlusService.php';
+require("db.php");
 
 session_start();
 
@@ -28,6 +29,7 @@ if (isset($_SESSION['access_token'])) {
 
 if ($client->getAccessToken()) {
   $me = $plus->people->get('me');
+  isUser($me);
   $_SESSION['userid'] = $me['id'];
   $_SESSION['username'] = $me['displayName'];
 }
@@ -37,8 +39,8 @@ if ($client->getAccessToken()) {
 // var_dump($me);
 // echo("\n</pre>\n");
 
-require("db.php");
-$tasks = get_task(1,'','','','');
+
+$tasks = get_task(0,'','','','');
 
 ?>
 
@@ -127,8 +129,9 @@ $tasks = get_task(1,'','','','');
 						<li>
 							<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
 							<div class="content">
-								<h5>Name, <span class="text-muted">Hello world.</span></h5>
-								<a href="task.php"><h4><?=$task[2]?></h4></a>
+								<?php $u=getUser($task[11]);?>
+								<h5><?=$u[1]?> <span class="text-muted">,Hello world.</span></h5>
+								<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 								<p><?=$task[5]?></p>
 								<div class="information">
 									<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
@@ -141,7 +144,7 @@ $tasks = get_task(1,'','','','');
 					<?php }?>
 					
 					
-					<?php for($i=0; $i <= 3; $i++){?>
+					<!--<?php for($i=0; $i <= 3; $i++){?>
 					<li>
 						<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
 						<div class="content">
@@ -156,7 +159,7 @@ $tasks = get_task(1,'','','','');
 							</div>
 						</div>
 					</li>
-					<?php }?>
+					<?php }?>-->
 				</ul>
 				<!-- <div style="text-align:center">
 					<ul class="pagination task-pagination">

@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['userid'])){
+	$uid=$_SESSION['userid'];
+}
+if(isset($_GET['tid'])){
+	$tid=$_GET['tid'];
+}
+
+?>
 <!doctype html>
 <html lang="en">
 <head>

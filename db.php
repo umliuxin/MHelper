@@ -64,10 +64,11 @@ function get_task($featured='1',$category='',$status='',$skill='',$location='')
 	if($featured==3){
 		$sql=$sql." ORDER BY appliednum DESC";
 	}
-	echo $sql;
+	//echo $sql;
 	$result=mysql_query($sql);
 	$return=array();
 	while($row=mysql_fetch_row($result)){
+		$row[1]=relativeTime($row[1]);
 		array_push($return, $row);
 	}
 
@@ -218,7 +219,7 @@ define("DAY", 24 * HOUR);
 define("MONTH", 30 * DAY);
 function relativeTime($time)
 {   
-    $now_time = date("Y-m-d H:i:s",time()-6*60*60);
+    $now_time = date("Y-m-d H:i:s",time()-5*60*60);
     $now_time = strtotime($now_time);
 	$show_time = strtotime($time);
     $delta = $now_time - $show_time;
@@ -263,8 +264,38 @@ function relativeTime($time)
     }
 } 
 
-function isUser($uid)
+function isUser($me)
 {
-	$sql="SELECT * FROM user WHERE uid='".$uid."'"
+	$uid=$me['id'];
+    $img = filter_var($me['image']['url'], FILTER_VALIDATE_URL);
+    $name = filter_var($me['displayName'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+	$sql="SELECT COUNT(uid) FROM user WHERE uid='".$uid."'";
+	$result=mysql_query($sql);
+	$flag=mysql_fetch_row($result);
+	if ($flag[0]==0){
+		$insert="INSERT INTO user (uid,uname,avatar) VALUES ('".$uid."','".$name."','".$img."')";
+		mysql_query($insert);
+	}
+}
+function getUser($uid){
+	$sql="SELECT * FROM user WHERE uid='".$uid."'";
+	$result=mysql_query($sql);
+	if($flag=mysql_fetch_row($result)){
+		return $flag;
+	}
+	else{
+		return 'someone';
+	}
+}
+function getTask($tid){
+	$sql="SELECT * FROM task WHERE tid='".$tid."'";
+	$result=mysql_query($sql);
+	if($flag=mysql_fetch_row($result)){
+		return $flag;
+	}
+	else{
+		return 'Empty';
+	}
+
 }
 ?>

@@ -1,7 +1,15 @@
 <?php
 $page = "new";
+session_start();
+if(isset($_SESSION['userid'])){
+	$uid=$_SESSION['userid'];
+	
+}
+else
+{
+	header('Location: login.php');
+}
 
-$uid=$_SESSION['userid'];
 
 if(isset($_POST['title']))
 {
@@ -17,6 +25,7 @@ $num=$_POST['num'];
 $reward=$_POST['reward'];
 $result=array($title,$category,$skill,$description,$location,$num,$startdate,$enddate,$reward);
 add_task($uid,cipher($result));
+header("Location: index.php");
 }
 ?>
 

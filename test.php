@@ -6,6 +6,8 @@
 	print_r($result);
 	echo '<br>';
 	print_r(interpret($result[2]));
+	
+	$re=getUser('115961391373383503520');
+	print_r($re);
 	echo '</pre>';
-	applytask(1,$result[2]);
 ?>
