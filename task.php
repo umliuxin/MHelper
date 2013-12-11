@@ -9,7 +9,7 @@ if(isset($_GET['tid'])){
 	$task=getTask($tid);
 	//print_r($task);
 	$in=interpret($task);
-	//print_r($in);
+	print_r($in);
 	//print_r($skill);
 	$tuser=getUser($task[11]);
 	//print_r($tuser);
@@ -20,7 +20,7 @@ if(isset($_GET['tid'])){
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MHelper-Task</title>
+	<title><?=$task[2]?></title>
 	
 	<!-- Load CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
@@ -51,7 +51,7 @@ if(isset($_GET['tid'])){
 					<li>
 						<h4>Skill Requirements</h4>
 						<?php
-						for($i=1;$i<sizeof($skill);$i++){
+						for($i=1;$i<sizeof($in[4]);$i++){
 							echo '<button type="button" class="btn btn-info"> '.$in[4][$i].'</button>';
 						}
 						?>
