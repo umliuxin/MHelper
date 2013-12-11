@@ -135,7 +135,7 @@ $tasks = get_task(0,'','','','');
 							</div>
 							<div class="content">
 								
-								<h5><?=$task[19][1]?><span class="text-muted">, <?=$task[19][3]?></span></h5>
+								<h5><?=$task[19][1]?><span class="text-muted"> - <?=$task[19][3]?></span></h5>
 								<a href="task.php?tid=<?=$task[0]?>" target="_blank"><h4><?=$task[2]?></h4></a>
 								<p><?=$task[5]?></p>
 								<div class="information">
@@ -280,7 +280,7 @@ $tasks = get_task(0,'','','','');
 						'<li>'+
 							'<div class="author"><img src="'+tasks[i][19][2]+'" class="avatar img-rounded"></div>' +
 							'<div class="content">' +
-								'<h5>'+tasks[i][19][1]+'<span class="text-muted">, '+tasks[i][19][3]+'</span></h5>' +
+								'<h5>'+tasks[i][19][1]+'<span class="text-muted"> - '+tasks[i][19][3]+'</span></h5>' +
 								'<a href="task.php?tid='+tasks[i][0]+'" target="_blank"><h4>'+tasks[i][2]+'</h4></a>' +
 								'<p>'+tasks[i][5]+'</p>' +
 								'<div class="information">' +
