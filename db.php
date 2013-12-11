@@ -279,7 +279,7 @@ function isUser($me)
 	$result=mysql_query($sql);
 	$flag=mysql_fetch_row($result);
 	if ($flag[0]==0){
-		$insert="INSERT INTO user (uid,uname,avatar) VALUES ('".$uid."','".$name."','".$img."')";
+		$insert="INSERT INTO user (uid,uname,avatar,bio) VALUES ('".$uid."','".$name."','".$img."','The fragrance always stays in the hand that gives')";
 		mysql_query($insert);
 	}
 }

@@ -94,9 +94,9 @@ require('db.php');
 									<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 									<p><?=$task[5]?></p>
 									<div class="information">
-										<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[16]?></small></h4></div>
-										<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[18]?></small></h4></div>
-										<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[15]?></small></h4></div>
+										<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[15]?></small></h4></div>
+										<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[17]?></small></h4></div>
+										<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[14]?></small></h4></div>
 										<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> <?=$task[1]?></small></h4></div>
 									</div>
 								</div>
@@ -117,9 +117,9 @@ require('db.php');
 										<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 										<p><?=$task[5]?></p>
 										<div class="information">
-											<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[16]?></small></h4></div>
-											<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[18]?></small></h4></div>
-											<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[15]?></small></h4></div>
+											<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> <?=$task[15]?></small></h4></div>
+											<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[17]?></small></h4></div>
+											<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[14]?></small></h4></div>
 											<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> <?=$task[1]?></small></h4></div>
 										</div>
 									</div>
