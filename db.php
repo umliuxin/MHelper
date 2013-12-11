@@ -211,8 +211,9 @@ function cipher($array)
 
 function applytask($uid,$tid,$applied,$appliednum)//the same with the array from database. apply($uid,$task[0],$task[13],$task[14])
 {
-	$num=$taskarray[14]+1;
-	$sql="UPDATE task SET applied='".$applied.$uid."&$&',appliednum=".$appliedbum." WHERE tid=".$taskarray[0];
+	$num=$appliednum+1;
+	$sql="UPDATE task SET applied='".$applied.$uid."&$&',appliednum=".$num." WHERE tid=".$tid;
+	mysql_query($sql);
 	echo $sql;
 }
 

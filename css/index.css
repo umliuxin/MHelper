@@ -39,6 +39,11 @@ body {
     height: 100%;
     margin-left: 60px;
 }
+#tasklist .content p{
+/*	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;*/
+}
 #tasklist .content h5 {
     color:#567daa;
 	margin:5px 0 5px 0;

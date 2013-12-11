@@ -111,7 +111,7 @@ if(isset($_GET['tid'])){
 					}
 					else{
 						$app=strpos($task[13],$uid);
-						if ($app==FALSE){
+						if ($app===0){
 							echo'<button id="applybtn" type="buttom" class="btn btn-primary applybtn center-block">Apply to this task</button>';
 						}
 						else{
@@ -146,8 +146,19 @@ if(isset($_GET['tid'])){
 	});
 	$('#applybtn').click(function(){
 		$(this).removeClass('btn-primary');
-		$(this).addClass('btn-success');
+		$(this).addClass('btn-success disabled');
 		$(this).html('Already Applied');
+		$.ajax({
+			type:'POST',
+			url:'handler.php',
+			data:{apply:'apply',userid:<?=$_SESSION['userid']?>,taskid:<?=$task[0]?>,task13:'<?=$task[13]?>',task14:'<?=$task[14]?>'},
+			success:function(response){
+				console.log(response);
+			},
+			error:function( jqXHR, textStatus ) {
+  			  console.log( "Request failed: " + textStatus );
+		  	}
+		});
 	});
 	</script>
 	
