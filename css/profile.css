@@ -135,6 +135,22 @@ a.help:hover * {
     width: 23%;
     margin: 1%;
 }
+.thumbnail-img-container {
+    position: relative;
+    background-color: #eee;
+    width:150px;
+    height:150px;
+}
+.thumbnail-img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
 .caption {
     position:absolute;
     top:0px;

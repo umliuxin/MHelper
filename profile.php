@@ -185,21 +185,126 @@
 					<div class="tab-pane" id="friendlist">
 					    <div class="row nopadding">
 					      	<ul class="thumbnails list-unstyled">
-					      		<?php for($i=0; $i <= 11; $i++){?>
 						        <li>
 						          <div class="thumbnail" style="padding: 0">
 						            <div class="caption">
-						          		<h4 class="media-heading">Joe Doe</h4>
+						          		<h4 class="media-heading">Black Widow</h4>
 						          		<p class="pull-right">Ann Arbor</p>
 						          		<div class="caption-info-container">
-						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 12</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 14</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 2</small></h4>
+						             	</div>
+						            </div>
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Black Widow.png">
+						            </div>
+						          </div>
+						        </li>
+						        <li>
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Giant Man</h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 3</small></h4>
 						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 6</small></h4>
 						             	</div>
 						            </div>
-						            <img style="width: 100%" src="http://placehold.it/300x300">            
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Giant Man.png">
+						            </div>
 						          </div>
 						        </li>
-	        					<?php }?>
+						        <li>
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Hawkeye</h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 1</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 3</small></h4>
+						             	</div>
+						            </div>
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Hawkeye.png">
+						            </div>
+						          </div>
+						        </li>
+						        <li>
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Hulk</h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 2</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 4</small></h4>
+						             	</div>
+						            </div>
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Hulk.png">
+						            </div>
+						          </div>
+						        </li>
+						        <li>
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Iron Man</h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 9</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 0</small></h4>
+						             	</div>
+						            </div>
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Iron Man.png">
+						            </div>
+						          </div>
+						        </li>
+						        <li>
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Loki</h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 0</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 4</small></h4>
+						             	</div>
+						            </div>
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Loki.png">
+						            </div>
+						          </div>
+						        </li>
+						        <li>
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Nick Fury</h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 5</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 1</small></h4>
+						             	</div>
+						            </div>
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Nick Fury.png">
+						            </div>
+						          </div>
+						        </li>
+						        <li>
+						          <div class="thumbnail" style="padding: 0">
+						            <div class="caption">
+						          		<h4 class="media-heading">Thor</h4>
+						          		<p class="pull-right">Ann Arbor</p>
+						          		<div class="caption-info-container">
+						            		<h4 class="caption-info"><small><i class="fa fa-edit"></i> 3</small></h4>
+						            		<h4 class="caption-info"><small><i class="fa fa-smile-o"></i> 4</small></h4>
+						             	</div>
+						            </div>
+						            <div class="thumbnail-img-container">
+						           		<img class="thumbnail-img" src="img/superhero/Thor.png">
+						            </div>
+						          </div>
+						        </li>
 					    	</ul>
 						</div>		  
 					</div>
