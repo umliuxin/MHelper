@@ -49,22 +49,27 @@ require('db.php');
 				<h4><i class="fa fa-user"></i> User Status</h4>
 		        <hr class="divider">
 				<ul class="profile-tabs">
+					<?php
+					$ctasks=getcreatedtask($uid);
+					$tasks=getapplytask($uid);
+					$view=rand(0,10);
+					?>
 				    <li class="followers">
 					    <a href="/MengTo/followers">
-					    	<span class="count">5</span>
+					    	<span class="count"><?=count($ctasks)?></span>
 					    	<span class="meta">Created</span>
 						</a>
 					</li>
 				    <li class="following">
 					    <a href="/MengTo/following">
-					    	<span class="count">10</span>
+					    	<span class="count"><?=count($tasks)?></span>
 					    	<span class="meta">Helped</span>
 						</a>
 					</li>
 				    <li class="listed">
 					    <a href="/MengTo/lists/memberships">
-					    	<span class="count">200</span>
-					    	<span class="meta">Views</span>
+					    	<span class="count"><?=$view?></span>
+					    	<span class="meta">Likes</span>
 						</a>
 					</li>
 				</ul>		
@@ -84,8 +89,8 @@ require('db.php');
 				  <div class="tab-pane active" id="created">
 					<ul id="tasklist" class="list-unstyled">
 						<?php
-						$tasks=getcreatedtask($uid);
-						foreach($tasks as $task){?>
+						
+						foreach($ctasks as $task){?>
 							<li>
 								<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
 								<div class="content">
@@ -107,7 +112,7 @@ require('db.php');
 				  	<div class="tab-pane" id="helped">
 						<ul id="tasklist" class="list-unstyled">
 							<?php
-							$tasks=getapplytask($uid);
+							
 							foreach($tasks as $task){?>
 								<li>
 									<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
