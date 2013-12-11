@@ -281,7 +281,7 @@ $tasks = get_task(0,'','','','');
 							'<div class="author"><img src="'+tasks[i][19][2]+'" class="avatar img-rounded"></div>' +
 							'<div class="content">' +
 								'<h5>'+tasks[i][19][1]+'<span class="text-muted">, '+tasks[i][19][3]+'</span></h5>' +
-								'<a href="task.php?tid='+tasks[i][0]+'"><h4>'+tasks[i][2]+'</h4></a>' +
+								'<a href="task.php?tid='+tasks[i][0]+'" target="_blank"><h4>'+tasks[i][2]+'</h4></a>' +
 								'<p>'+tasks[i][5]+'</p>' +
 								'<div class="information">' +
 									'<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> '+tasks[i][15]+'</small></h4></div>' +
