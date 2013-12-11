@@ -143,24 +143,6 @@ $tasks = get_task(0,'','','','');
 							</div>
 						</li>
 					<?php }?>
-					
-					
-					<!--<?php for($i=0; $i <= 3; $i++){?>
-					<li>
-						<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
-						<div class="content">
-							<h5>Name, <span class="text-muted">I wrote python, I'm a super hero.</span></h5>
-							<a href="task.php"><h4>Ok, so here would be the title of the task</h4></a>
-							<p>Hey, be quiet, the adults are testing.</p>
-							<div class="information">
-								<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>
-								<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>
-								<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>
-								<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> Just Now</small></h4></div>
-							</div>
-						</div>
-					</li>
-					<?php }?>-->
 				</ul>
 				<!-- <div style="text-align:center">
 					<ul class="pagination task-pagination">
@@ -212,6 +194,39 @@ $tasks = get_task(0,'','','','');
 		
 		data = data.slice(0,data.length-1);
 		console.log(data);
+		
+		$.ajax({
+			type:'GET',
+			url:'handler.php',
+			data:{filter:data},
+			success:function(response){
+				var tasks = JSON.parse(response);
+				console.log(tasks);
+				$('#tasklist').empty();
+				for(var i=0; i<tasks.length; i++){
+					var task = ''+						
+						'<li>'+
+							'<div class="author"><img src="'+tasks[i][19][2]+'" class="avatar img-rounded"></div>' +
+							'<div class="content">' +
+								'<h5>'+tasks[i][19][1]+'<span class="text-muted">, '+tasks[i][19][3]+'</span></h5>' +
+								'<a href="task.php?tid='+tasks[i][0]+'"><h4>'+tasks[i][2]+'</h4></a>' +
+								'<p>'+tasks[i][5]+'</p>' +
+								'<div class="information">' +
+									'<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> 15</small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> 9</small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-users"></i> 5</small></h4></div>' +
+									'<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> '+tasks[i][1]+'</small></h4></div>' +
+								'</div>' +
+							'</div>' +
+						'</li>';
+					$('#tasklist').append(task);
+				}
+			},
+			error:function( jqXHR, textStatus ) {
+  			  console.log( "Request failed: " + textStatus );
+		  	}
+		});
+		
 	});
 	</script>
 	

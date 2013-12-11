@@ -5,6 +5,8 @@ if (!$db) {
 } 
 mysql_select_db("MHelper");
 
+
+
 function default_get_task()
 {
 	//get tasks by ?? order
@@ -16,7 +18,7 @@ function default_get_task()
 	return $return;
 }
 
-function get_task($featured='1',$category='',$status='',$skill='',$location='')
+function get_task($featured='1',$category='',$skill='',$status='',$location='')
 {
 	$sql='SELECT * FROM task WHERE 1=1';
 	if($category!=''){
@@ -213,14 +215,16 @@ function applytask($uid,$taskarray)//the same with the array from database
 	echo $sql;
 }
 
-define("SECOND", 1);
-define("MINUTE", 60 * SECOND);
-define("HOUR", 60 * MINUTE);
-define("DAY", 24 * HOUR);
-define("MONTH", 30 * DAY);
-date_default_timezone_set('America/Detroit');
+
 function relativeTime($time)
 {   
+	define("SECOND", 1);
+	define("MINUTE", 60 * SECOND);
+	define("HOUR", 60 * MINUTE);
+	define("DAY", 24 * HOUR);
+	define("MONTH", 30 * DAY);
+	date_default_timezone_set('America/Detroit');
+	
     $now_time = date("Y-m-d H:i:s");
     $now_time = strtotime($now_time);
 	$show_time = strtotime($time);
