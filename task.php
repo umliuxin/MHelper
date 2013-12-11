@@ -86,7 +86,7 @@ if(isset($_GET['tid'])){
 				<div class="overview">
 					<?php
 					$pos = strpos($task[11], $uid);
-					if ($pos!=0){
+					if ($pos===0){
 					?>
 					<button type="buttom" class="btn btn-success applybtn center-block">My Project</button>
 					<?php
