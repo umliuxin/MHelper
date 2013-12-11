@@ -26,7 +26,7 @@
 			</form>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="profile.php" style="padding:0"><img src="img/avatar.jpg" class="avatar"></a</li>
+				<li><a href="profile.php" style="padding:0"><img src="<?=$_SESSION['avatar']?>" class="avatar"></a</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?><b class="caret"></b></a>
 					<ul class="dropdown-menu">

@@ -32,6 +32,7 @@ if ($client->getAccessToken()) {
   isUser($me);
   $_SESSION['userid'] = $me['id'];
   $_SESSION['username'] = $me['displayName'];
+  $_SESSION['avatar'] = $me['image']['url'];
 }
 
 // echo("<p>Here is the session information:\n<pre>\n");
