@@ -54,7 +54,7 @@ function get_task($featured='1',$category='',$skill='',$status='',$location='')
 		$sql=$sql.")";
 	}
 	if($featured==1){
-		$sql=$sql." ORDER BY 1-1/(1+((3600*24*(0.7*appliednum+0.2*likenum+commentnum*0.1))/TIME_TO_SEC(TIMEDIFF(NOW(),create_time))))";
+		$sql=$sql." ORDER BY 1-1/(1+((3600*24*(0.7*appliednum+0.2*likenum+commentnum*0.1))/TIME_TO_SEC(TIMEDIFF(NOW(),create_time)))) DESC";
 	}
 	if($featured==0){
 		$sql=$sql." ORDER BY create_time DESC";

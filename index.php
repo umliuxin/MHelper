@@ -131,7 +131,7 @@ $tasks = get_task(0,'','','','');
 							<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
 							<div class="content">
 								
-								<h5><?=$task[19][1]?><span class="text-muted">,Hello world.</span></h5>
+								<h5><?=$task[19][1]?><span class="text-muted">,<?=$task[19][3]?></span></h5>
 								<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 								<p><?=$task[5]?></p>
 								<div class="information">
@@ -280,9 +280,9 @@ $tasks = get_task(0,'','','','');
 								'<a href="task.php?tid='+tasks[i][0]+'"><h4>'+tasks[i][2]+'</h4></a>' +
 								'<p>'+tasks[i][5]+'</p>' +
 								'<div class="information">' +
-									'<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i><?=$task[15]?></small></h4></div>' +
-									'<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> <?=$task[17]?></small></h4></div>' +
-									'<div class="infoleft"><h4><small><i class="fa fa-users"></i> <?=$task[14]?></small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-thumbs-o-up"></i> '+tasks[i][15]+'</small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-comment-o"></i> '+tasks[i][17]+'</small></h4></div>' +
+									'<div class="infoleft"><h4><small><i class="fa fa-users"></i> '+tasks[i][14]+'</small></h4></div>' +
 									'<div class="inforight"><h4><small><i class="fa fa-clock-o"></i> '+tasks[i][1]+'</small></h4></div>' +
 								'</div>' +
 							'</div>' +
