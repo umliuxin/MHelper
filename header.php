@@ -22,7 +22,7 @@
 				<div class="form-group">
 					<input type="text" id="searchBox" class="form-control" placeholder="Search">
 				</div>
-				<a class="btn btn-default" id="searchBtn" onclick="return false;"><i class="fa fa-search"></i></a>
+				<a class="btn btn-default" id="searchBtn" style="border-radius: 18px;" onclick="return false;"><i class="fa fa-search"></i></a>
 			</form>
 
 			<ul class="nav navbar-nav navbar-right">
