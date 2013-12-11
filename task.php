@@ -9,7 +9,7 @@ if(isset($_GET['tid'])){
 	$task=getTask($tid);
 	//print_r($task);
 	$in=interpret($task);
-	print_r($in);
+	//print_r($in);
 	//print_r($skill);
 	$tuser=getUser($task[11]);
 	//print_r($tuser);
@@ -40,7 +40,7 @@ if(isset($_GET['tid'])){
 			<div id="task-content" class="col-md-6 col-md-offset-1">
 				<h3><?=$task[2]?></h3>
 				<div class="authorinfo">
-					<span class="pull-left"><img class="avatar" src="img/superhero/Hawkeye.png"><?=$tuser[1]?></span>
+					<?php echo '<span class="pull-left"><img class="avatar" src="'.$tuser[2].'">'.$tuser[1].'</span>'; ?>
 					<span class="pull-right">Posted: <?=relativeTime($task[1])?></span>
 				</div>
 				<ul class="list-unstyled">
@@ -111,10 +111,10 @@ if(isset($_GET['tid'])){
 					<label>Task Overview</label>
 					<ul class="list-unstyled">
 						<li><span class="pull-left">Category:</span><span class="pull-right"><?=$in[3]?></span></li>	
-						<li><span class="pull-left">Time:</span><span class="pull-right">From: <?=$in[8]?></span>
-						</br><span class="pull-right">To: <?=$in[9]?></span></li>
+						<li><span class="pull-left">Time:</span><span class="pull-right">From: <?=$task[8]?></span>
+						</br><span class="pull-right">To: <?=$task[9]?></span></li>
 						<li><span class="pull-left">Location:</span><span class="pull-right"><?=$in[6]?></span></li>	
-						<li><span class="pull-left">Reward:</span><span class="pull-right"><?=$in[10]?></span></li>		
+						<li><span class="pull-left">Reward:</span><span class="pull-right"><?=$task[10]?></span></li>		
 					</ul>
 				</div>
 				
