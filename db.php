@@ -209,10 +209,10 @@ function cipher($array)
 	//6:startdate,7:enddate,8:reward,9:id
 }
 
-function applytask($uid,$taskarray)//the same with the array from database
+function applytask($uid,$tid,$applied,$appliednum)//the same with the array from database. apply($uid,$task[0],$task[13],$task[14])
 {
 	$num=$taskarray[14]+1;
-	$sql="UPDATE task SET applied='".$taskarray[13].$uid."&$&',appliednum=".$num." WHERE tid=".$taskarray[0];
+	$sql="UPDATE task SET applied='".$applied.$uid."&$&',appliednum=".$appliedbum." WHERE tid=".$taskarray[0];
 	echo $sql;
 }
 
