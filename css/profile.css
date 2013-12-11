@@ -80,17 +80,6 @@ a.help:hover * {
 #tasklist li {
     padding:5px 0;
     border-top:1px solid #eee;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-}
-#tasklist li:hover {
-    background-color: #eee;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
 }
 #tasklist li:first-child {
     border-width: 0;
