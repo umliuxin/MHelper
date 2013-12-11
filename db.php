@@ -140,7 +140,7 @@ function add_task($uid,$array)
 	//array format:0:title,1:category,2:skill tag,3:description,4:num,5:location
 	//6:startdate,7:enddate,8:reward
 {
-	$sql="INSERT INTO task (title,task_category,skill_tags,task_description,task_location,attend_num,start_date,end_data,reward,uid,status,applied) VALUES('".$array[0]."',".$array[1].",'".$array[2]."','".$array[3]."',".$array[4].",".$array[5].",'".$array[6]."','".$array[7]."','".$array[8]."',".$uid.",0,'0&$&')";
+	$sql="INSERT INTO task (title,task_category,skill_tags,task_description,task_location,attend_num,start_date,end_data,reward,uid,status,applied) VALUES('".$array[0]."',".$array[1].",'".$array[2]."','".$array[3]."',".$array[4].",".$array[5].",'".$array[6]."','".$array[7]."','".$array[8]."',".$uid.",0,'&$&')";
 	mysql_query($sql);
 }
 
@@ -299,5 +299,30 @@ function getTask($tid){
 		return 'Empty';
 	}
 
+}
+function getcreatedtask($uid){
+	$sql="SELECT * FROM task WHERE uid=".$uid;
+	$result=mysql_query($sql);
+	$return=array();
+	while($row=mysql_fetch_row($result)){
+		$row[1]=relativeTime($row[1]);
+		array_push($row,getUser($row[11]));
+		array_push($return, $row);
+	}
+
+	return $return;
+	
+}
+function getapplytask($uid){
+	$sql="SELECT * FROM task WHERE applied LIKE '%".$uid."%' OR moderator LIKE '%".$uid."%'";
+	$result=mysql_query($sql);
+	$return=array();
+	while($row=mysql_fetch_row($result)){
+		$row[1]=relativeTime($row[1]);
+		array_push($row,getUser($row[11]));
+		array_push($return, $row);
+	}
+
+	return $return;
 }
 ?>
