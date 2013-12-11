@@ -59,9 +59,9 @@ function get_task($featured='1',$category='',$skill='',$status='',$location='')
 	if($featured==0){
 		$sql=$sql." ORDER BY create_time DESC";
 	}
-	if($featured=='2'){
+	if($featured==2){
 		$datetime = date('Y-m-d', time());
-		$sql=$sql." AND (end_data  > CAST(".$datetime."AS TIME) ) ORDER BY end_data";
+		$sql=$sql." AND (end_data  > CAST('".$datetime."' AS TIME) ) ORDER BY end_data";
 	}
 	if($featured==3){
 		$sql=$sql." ORDER BY appliednum DESC";
