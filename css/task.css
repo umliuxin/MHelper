@@ -110,3 +110,9 @@ body {
 .overview ul li .pull-right:hover{
 	color:#567daa;
 }
+.skillBtn {
+	margin-left: 5px;
+}
+.skillBtn:first-child; {
+	margin-left: 0;
+}
