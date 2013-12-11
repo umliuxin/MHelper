@@ -130,8 +130,8 @@ $tasks = get_task(0,'','','','');
 						<li>
 							<div class="author"><img src="img/avatar.jpg" class="avatar img-rounded"></div>
 							<div class="content">
-								<?php $u=getUser($task[11]);?>
-								<h5><?=$u[1]?> <span class="text-muted">,Hello world.</span></h5>
+								
+								<h5><?=$task[19][1]?><span class="text-muted">,Hello world.</span></h5>
 								<a href="task.php?tid=<?=$task[0]?>"><h4><?=$task[2]?></h4></a>
 								<p><?=$task[5]?></p>
 								<div class="information">

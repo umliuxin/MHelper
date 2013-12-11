@@ -69,6 +69,7 @@ function get_task($featured='1',$category='',$status='',$skill='',$location='')
 	$return=array();
 	while($row=mysql_fetch_row($result)){
 		$row[1]=relativeTime($row[1]);
+		array_push($row,getUser($row[11]));
 		array_push($return, $row);
 	}
 

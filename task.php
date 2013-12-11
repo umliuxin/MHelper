@@ -1,10 +1,13 @@
 <?php
 session_start();
+require('db.php');
 if(isset($_SESSION['userid'])){
 	$uid=$_SESSION['userid'];
 }
 if(isset($_GET['tid'])){
 	$tid=$_GET['tid'];
+	$task=getTask($tid);
+	print_r($task);
 }
 
 ?>
@@ -81,7 +84,23 @@ if(isset($_GET['tid'])){
 			
 			<div id="task-sidebar" class="col-md-4">
 				<div class="overview">
-					<button type="buttom" class="btn btn-success applybtn center-block">Apply to this task</button>
+					<?php
+					$pos = strpos($task[11], $uid);
+					if ($pos!=0){
+					?>
+					<button type="buttom" class="btn btn-success applybtn center-block">My Project</button>
+					<?php
+					}
+					else{
+						$app=strpos($task[13],$uid);
+						if ($app==FALSE){
+							echo'<button type="buttom" class="btn btn-success applybtn center-block">Apply to this task</button>';
+						}
+						else{
+							echo'<button type="buttom" class="btn btn-success applybtn center-block">Appied,Contact owner</button>';
+						}
+					}
+					?>
 					<p class="text-muted text-center">Task Applicants Remining: 2 of 2.</p>
 					<label>Task Overview</label>
 					<ul class="list-unstyled">
