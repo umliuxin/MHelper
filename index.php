@@ -130,7 +130,9 @@ $tasks = get_task(0,'','','','');
 					
 					<?php foreach($tasks as $task){?>
 						<li>
-							<div class="author"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></div>
+							<div class="author">
+								<a href="profile.php?fid=<?=$task[11]?>"><img src="<?=$task[19][2]?>" class="avatar img-rounded"></a>
+							</div>
 							<div class="content">
 								
 								<h5><?=$task[19][1]?><span class="text-muted">, <?=$task[19][3]?></span></h5>

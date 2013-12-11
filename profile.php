@@ -1,7 +1,14 @@
 <?php
 session_start();
-$uid=$_SESSION['userid'];
 require('db.php');
+
+$uid=$_SESSION['userid'];
+$user=getUser($uid);
+
+if(isset($_GET['fid'])){
+	$uid=$_GET['fid'];
+	$user=getUser($uid);
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -27,10 +34,10 @@ require('db.php');
 	
 				<div class="media" style="padding:0 0 20px 0;">
             		<a class="pull-left" href="#">
-            			<img class="profile-avatar media-object dp img-circle" src="<?php echo substr($_SESSION['avatar'], 0, strlen($_SESSION['avatar'])-2).'150'?>" >
+            			<img class="profile-avatar media-object dp img-circle" src="<?php echo substr($user[2], 0, strlen($user[2])-2).'150';?>" >
             		</a>
 		            <div class="media-body col-md-7">
-		                <h4 class="media-heading"><?=$_SESSION['username']?> <small> Ann Arbor</small></h4>
+		                <h4 class="media-heading"><?=$user[1]?> <small> Ann Arbor</small></h4>
 		               	<blockquote style="margin:0;">
 	                		<small><i class="fa fa-pencil-square"></i> I wrote python, I'm a super hero.</small>
 		            		<small><i class="fa fa-envelope"> joedoe@gmail.com</i></small>
