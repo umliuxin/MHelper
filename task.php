@@ -122,7 +122,7 @@ if(isset($_GET['tid'])){
 						}
 					}
 					?>
-					<p class="text-muted text-center">Task Applicants Remining: 2 of 2.</p>
+					<p class="text-muted text-center">Task Applicants Remining: 1 of 1.</p>
 					<label>Task Overview</label>
 					<ul class="list-unstyled">
 						<li><span class="pull-left">Category:</span><span class="pull-right"><?=$in[3]?></span></li>	

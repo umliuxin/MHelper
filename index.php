@@ -187,7 +187,7 @@ $tasks = get_task(0,'','','','');
                             <div class="header">
                                 <strong class="primary-font">Chengqi</strong>
                                     <small class="text-muted pull-right">
-                                		<i class="fa fa-clock-o"></i> 12 hours ago
+                                		<i class="fa fa-clock-o"></i> 3 hours ago
                                 	</small>
                                 <p><small>Created a badge in Programming</small></p>
                             </div>
@@ -201,7 +201,7 @@ $tasks = get_task(0,'','','','');
                             <div class="header">
                                 <strong class="primary-font">Xinying</strong>
                                     <small class="text-muted pull-right">
-                                		<i class="fa fa-clock-o"></i> 3 days ago
+                                		<i class="fa fa-clock-o"></i> 8 hours ago
                                 	</small>
                                 <p><small>First skill unlocked: Chinese</small></p>
                             </div>
@@ -215,7 +215,7 @@ $tasks = get_task(0,'','','','');
                             <div class="header">
                                 <strong class="primary-font">Xin</strong>
                                     <small class="text-muted pull-right">
-                                		<i class="fa fa-clock-o"></i> 10 days ago
+                                		<i class="fa fa-clock-o"></i> 1 days ago
                                 	</small>
                                 <p><small>Helped 10 people in a month</small></p>
                             </div>
@@ -229,7 +229,7 @@ $tasks = get_task(0,'','','','');
                             <div class="header">
                                 <strong class="primary-font">Chengchang</strong>
                                     <small class="text-muted pull-right">
-                                		<i class="fa fa-clock-o"></i> 1 days ago
+                                		<i class="fa fa-clock-o"></i> 3 days ago
                                 	</small>
                                 <p><small>Create the first task</small></p>
                             </div>
