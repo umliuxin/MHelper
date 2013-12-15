@@ -16,6 +16,7 @@
 			<ul class="nav navbar-nav">
 				<li <?php if($page == "home"){?>class="active"<?php }?> ><a href="index.php"><i class="fa fa-home"></i> Explore</a></li>
 				<li <?php if($page == "new"){?>class="active"<?php }?> ><a href="newtask.php"><i class="fa fa-plus"></i> New Task</a></li>
+				<li <?php if($page == "report"){?>class="active"<?php }?> ><a href="report.php"><i class="fa fa-file"></i> About Mhelper</a></li>
 			</ul>
 
 			<form class="navbar-form navbar-left" id="searchBar" role="search">

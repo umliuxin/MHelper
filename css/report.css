@@ -1,0 +1,47 @@
+a:hover {
+    text-decoration: none;
+}
+body {
+    padding-top: 70px;
+}
+.avatar {
+    width:40px;
+    height:40px;
+    margin:5px;
+}
+#searchBtn {
+    border-radius: 18px;
+}
+#mainbar {
+
+}
+hr.divider {
+    margin: 0 auto 18px;
+    border-width: 5px;
+}
+
+.frame{
+/*	border:1px solid #ccc;
+	padding:10px;*/
+}
+
+.intro{
+	padding-bottom:40px;
+}
+
+.report{
+	
+}
+
+.report h4{
+	font-size:20px;
+	color:#285e8e;
+}
+.report h5{
+	font-size:16px;
+	color:#3276b1;
+	padding-left:2px;
+}
+.report p{
+	padding-left:3px;
+}
