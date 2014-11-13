@@ -1,0 +1,310 @@
+body {
+    padding-top: 70px;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.avatar {
+    width:40px;
+    height:40px;
+    margin:5px;
+}
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+}
+.media {
+    /*box-shadow:0px 0px 4px -2px #000;*/
+    margin: 20px 0;
+    padding:30px;
+}
+.dp {
+    border:10px solid #eee;
+    transition: all 0.2s ease-in-out;
+}
+.dp:hover {
+    border:2px solid #eee;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -webkit-font-smoothing:antialiased;
+}
+a {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.fa-big {
+    font-size: 50px;
+    text-align: right;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    outline: none;
+}
+/* Create */
+ a.create i, .create h4.list-group-item-heading {
+    color:#E48A07;
+}
+a.create:hover {
+    background-color:#E48A07;
+}
+a.create:hover * {
+    color:#FFF;
+}
+/* Help */
+ a.help i, .help h4.list-group-item-heading {
+    color:#44bbff;
+    ;
+}
+a.help:hover {
+    background-color:#44bbff;
+}
+a.help:hover * {
+    color:#FFF;
+}
+.nav-pills>li>a {
+    border-radius: 4px 4px 0 0;
+}
+#tasklist {
+    margin:0px;
+}
+#tasklist li {
+    padding:5px 0;
+    border-top:1px solid #eee;
+}
+#tasklist li:first-child {
+    border-width: 0;
+}
+#tasklist .author {
+    width:60px;
+    height:100%;
+    text-align:center;
+    float:left;
+}
+#tasklist .content {
+    height: 100%;
+    margin-left: 60px;
+}
+#tasklist .content h5 {
+    color:#567daa;
+    margin:5px 0 5px 0;
+}
+#tasklist .content h4 {
+    color:#567daa;
+}
+#tasklist .content .information {
+    overflow:hidden;
+    margin:5px 0;
+}
+#tasklist .content .information h4 {
+    margin:0;
+}
+#tasklist .content .infoleft {
+    float:left;
+    margin-right:20px;
+}
+#tasklist .content .inforight {
+    float:right;
+    margin-right:10px;
+}
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+    float: left;
+    border:0;
+    width: 23%;
+    margin: 1%;
+}
+.thumbnail-img-container {
+    position: relative;
+    background-color: #eee;
+    width:150px;
+    height:150px;
+}
+.thumbnail-img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+.caption {
+    position:absolute;
+    top:0px;
+    right:0;
+    background:rgba(66, 139, 202, 0.6);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
+.caption-info-container {
+    margin-top: 50%;
+}
+.caption-info {
+    float: right;
+    margin-left: 5%;
+}
+.caption-info small{
+    color: #fff;
+}
+hr.divider {
+    margin: 0 auto 18px;
+    border-width: 5px;
+}
+ul.profile-tabs {
+    padding: 0;
+    margin-bottom: 20px;
+}
+ul.profile-tabs li {
+    width: 33.3%;
+    float: left;
+    padding: 0.8em 1em;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    color: #444;
+    border-right: 1px solid #eee;
+    list-style: none;
+}
+ul.profile-tabs li:last-child {
+    border-right: 0;
+}
+ul.profile-tabs li:hover {
+    background-color: #eee;
+}
+ul.profile-tabs li a {
+    display: block;
+    float: left;
+    color: #444;
+}
+ul.profile-tabs li a:hover {
+    text-decoration: none;
+    color:#428bca;
+}
+ul.profile-tabs li a span {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+ul.profile-tabs li span.meta {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+}
+.badgecontent {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.badgecontent li {
+    padding: 10px 5px;
+    border-bottom: 1px dotted #B3A9A9;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;    
+}
+.badgecontent li:hover {
+    background-color: #eee;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.badgecontent li:last-child {
+    border-bottom: 0;
+}
+.badgecontent li.left .badgecontent-body {
+    margin-left: 60px;
+}
+.badgecontent li.right .badgecontent-body {
+    margin-right: 60px;
+}
+.badgecontent li .badgecontent-body p {
+    margin: 0;
+    color: #777777;
+}
+.badgecontent-img img {
+    width: 40px;
+    height: 40px;
+}
+.btn-label {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px 0 0 3px;
+}
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.btn-other {
+    position: relative;
+    margin-right: 2px;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+.endorseLine {
+    border-top: 1px solid #f4f4f4;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    overflow: hidden;
+    height: 12px;
+    display: block;
+}
+.endorseContainer {
+    overflow: hidden;
+}
+.endorseBtn {
+    float: left;
+    margin-top: -5px;
+}
+.endorsersPics {
+    float: right;
+    overflow: visible;
+    margin-left: 10px;
+    margin-right: 0px;
+    height: 27px;
+}
+.endorsersPics li {
+    float: left;
+    margin-left: 1px;
+    margin-right: 0px;
+    height: 24px;
+}
+.endorser {
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+.small-thumbnail {
+    width: 24px;
+    height: 24px;
+}

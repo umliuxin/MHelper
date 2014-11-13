@@ -1,0 +1,45 @@
+body {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+.avatar {
+    width:40px;
+    height:40px;
+    margin:5px;
+}
+.fullscreen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../img/login-bg.jpg');
+}
+.form-signin {
+    max-width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin-heading {
+    margin: -5% auto 5%;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.form-signin-text {
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.form-signin-logo {
+    text-align: center;
+    width: 50%;
+}
+.form-signin-btn {
+    margin:-2% auto 0;
+    width:30%;
+}

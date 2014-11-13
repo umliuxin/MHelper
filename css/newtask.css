@@ -1,0 +1,77 @@
+body {
+    padding-top: 70px;
+}
+.avatar {
+    width:40px;
+    height:40px;
+    margin:5px;
+}
+#searchBtn {
+    border-radius: 18px;
+}
+#mainbar {
+	padding-bottom:100px;
+}
+
+#mainbar .intro{
+	width:60%;
+	margin:30px auto 50px;
+	text-align:center;
+}
+#mainbar .intro h3{
+	color:#567daa;
+}
+#mainbar .intro p{
+	color:#777;
+	line-height:200%;
+	letter-spacing:0.5px;
+}
+
+#taskform{
+	padding:30px;
+	border:1px solid #ddd;
+	
+	-moz-box-shadow: 0 1px 1px #ddd;
+	-webkit-box-shadow: 0 1px 1px #ddd;
+	box-shadow: 0 1px 1px #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#taskform hr{
+	margin:40px 0 30px;
+	border-top-color:#ddd;
+}
+
+#taskform .form-group{
+	margin-top:36px;
+	width:80%;
+	overflow:hidden;
+}
+#taskform .form-group:first-child{
+	margin-top:0px;
+}
+#taskform .form-group label{
+	color:#777;
+}
+#taskform .form-group p{
+	color:#999;
+}
+#taskform .form-group .form-control{
+	margin-top:6px;
+}
+#taskform .form-group .date-group{
+	width:50%;
+	float:left;
+}
+#taskform .form-group .date-group .date{
+	width:80%;
+}
+#taskform .form-group .date-group .form-control{
+	margin-top:0px;
+}
+#taskform .form-group .date-group label{
+	margin-bottom:11px;
+}

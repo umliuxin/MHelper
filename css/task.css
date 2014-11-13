@@ -1,0 +1,123 @@
+body {
+    padding-top: 70px;
+}
+.avatar {
+    width:40px;
+    height:40px;
+    margin:5px;
+}
+#searchBtn {
+    border-radius: 18px;
+}
+
+#task-content h3{
+	color:#567daa;
+}
+#task-content h4{
+	background-color:#eee;
+	padding:10px 10px 10px;
+	border-radius:8px;
+	color:#777;
+	font-weight:normal;
+}
+#task-content p{
+	
+}
+#task-content .authorinfo{
+	overflow:hidden;
+	color:#777;
+}
+#task-content .authorinfo .avatar{
+	width:25px;
+	height:25px;
+}
+
+#task-content ul li{
+	margin-bottom:30px;
+}
+
+#task-content #messages li{
+	padding:5px 0;
+	margin-bottom:0px;
+	border-top:1px solid #eee;
+}
+#task-content #messages li:first-child{
+	border:none;
+}
+
+#messages .author {
+    width:60px;
+    height:100%;
+    text-align:center;
+    float:left;
+}
+#messages .content {
+    height: 100%;
+    margin-left: 60px;
+}
+#messages .content h5 {
+    color:#567daa;
+	margin:5px 0 5px 0;
+}
+#messages .content h4 {
+    color:#567daa;
+}
+#messages .content .time{
+	color:#999;
+	font-weight:normal;
+}
+
+#messages .content textarea{
+	margin-bottom:10px;
+}
+
+
+
+.overview{
+	background-color:#eee;
+	padding:25px;
+	border-radius:5px;
+	margin-top:20px;
+}
+
+.overview .applybtn{
+	padding:10px 15px;
+	width:70%;
+	font-size:16px;
+	margin:20px auto;
+}
+
+.overview label{
+	color:#777;
+	margin-top:20px;
+}
+
+.overview ul{
+}
+
+.overview ul li{
+	overflow:hidden;
+	padding:11px 3px;
+	border-top:1px solid #aaa;
+}
+.overview ul li:first-child{
+	border-top:none;
+}
+.overview ul li .pull-left{
+	color:#777;
+}
+
+.overview ul li .pull-right:hover{
+	color:#567daa;
+}
+.skillBtn {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.skillBtn:first-child; {
+	margin-left: 0;
+	margin-top: 5px;	
+}
+.likeBtn {
+	margin-left: 10px;
+}
